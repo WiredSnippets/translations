@@ -18,12 +18,12 @@
     "selector": {
       "name_one": "Selector",
       "name_other": "Selectores",
-      "description": "Los selectores se utilizan para seleccionar usuarios o muebles para un causante o efecto."
+      "description": "Los selectores se utilizan para seleccionar usuarios o furnis que luego pueden ser usados en cualquier caja Wired."
     },
     "variable": {
       "name_one": "Variable",
       "name_other": "Variables",
-      "description": "Las variables se utilizan para almacenar información que puede ser usada en causantes y efectos."
+      "description": "Las variables se utilizan para almacenar información que luego puede ser usada en cualquier caja Wired."
     },
     "addon": {
       "name_one": "Complemento",
@@ -474,7 +474,7 @@
     },
     "var_changed": {
       "name": "Causante WIRED: Cambio de variable",
-      "description": "Se activa cuando una variable configurada cambia de valor."
+      "description": "Se activa cuando una variable configurada cambia de valor, es eliminada o es creada."
     },
     "filter_furni_by_var": {
       "name": "Filtro WIRED: Furnis con variable más alta/baja",

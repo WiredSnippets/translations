@@ -18,12 +18,12 @@
     "selector": {
       "name_one": "Selector",
       "name_other": "Selectors",
-      "description": "Selectors are used to select users or furniture for a trigger or effect."
+      "description": "Selectors are used to select users or furniture and can be used for any wired box."
     },
     "variable": {
       "name_one": "Variable",
       "name_other": "Variables",
-      "description": "Variables are used to store information that can be used in triggers and effects."
+      "description": "Variables are used to store information that can be used in any wired box."
     },
     "addon": {
       "name_one": "Add-On",
