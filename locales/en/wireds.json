@@ -213,417 +213,416 @@
       "description": "Allows triggering if the user is not under a specific avatar effect."
     },
     "user_count_in": {
-    "name": "WIRED Condition: User Count in Room",
-    "description": "Allows triggering if the user count in the room is within the defined limits."
-  },
-  "not_wearing_b": {
-    "name": "WIRED Negative Condition: NOT Wearing Badge",
-    "description": "Allows triggering if the user is not wearing a specified badge."
-  },
-  "stuff_is": {
-    "name": "WIRED Condition: Furni Matches",
-    "description": "Allows triggering if the Furni defined by the trigger matches one of the selected Furni or is of the same type."
-  },
-  "not_in_group": {
-    "name": "WIRED Negative Condition: NOT Group Member",
-    "description": "Allows triggering if the user is in a group room but is not a member of that group."
-  },
-  "not_stuff_is": {
-    "name": "WIRED Negative Condition: Furni DOESN'T Match",
-    "description": "Allows triggering if the Furni defined by the trigger does not match any of the selected Furni or is not of the same type."
-  },
-  "move_furni_to": {
-    "name": "WIRED Effect: Move Triggering Furni",
-    "description": "Moves the triggering Furni to the vicinity of one of the selected Furni."
-  },
-  "toggle_to_rnd": {
-    "name": "WIRED Effect: Toggle Furni to Random State",
-    "description": "Changes the state of the selected Furni to a random state."
-  },
-  "not_match_snap": {
-    "name": "WIRED Negative Condition: Furni States DON'T Match",
-    "description": "Allows triggering if the states of the selected Furni do not match."
-  },
-  "mute_triggerer": {
-    "name": "WIRED Effect: Mute User",
-    "description": "Mutes the triggering user, preventing them from speaking in the room."
-  },
-  "date_rng_active": {
-    "name": "WIRED Condition: Date and Time",
-    "description": "Allows setting a specific date and time range during which the wired effect can be triggered."
-  },
-  "bot_clothes": {
-    "name": "WIRED Effect: Bot Changes Clothes",
-    "description": "Changes the clothes of the selected Bot."
-  },
-  "bot_teleport": {
-    "name": "WIRED Effect: Teleport Bot to Furni",
-    "description": "Teleports the selected Bot to one of the chosen Furni."
-  },
-  "bot_reached_stf": {
-    "name": "WIRED Trigger: Bot Reaches Furni",
-    "description": "Triggers effects when the selected Bot reaches one of the chosen Furni."
-  },
-  "bot_follow_avatar": {
-    "name": "WIRED Effect: Bot Follows User",
-    "description": "Makes the selected Bot follow the triggering user."
-  },
-  "bot_give_handitem": {
-    "name": "WIRED Effect: Give Handitem",
-    "description": "Makes the selected Bot give the specified handitem to a user."
-  },
-  "bot_move": {
-    "name": "WIRED Effect: Bot Moves to Furni",
-    "description": "Moves the selected Bot to one of the chosen Furni."
-  },
-  "has_handitem": {
-    "name": "WIRED Condition: User Has Handitem",
-    "description": "Allows triggering if the user is holding the specified handitem."
-  },
-  "bot_talk_to_avatar": {
-    "name": "WIRED Effect: Bot Talks or Whispers to User",
-    "description": "Makes the selected Bot talk or whisper to the triggering user."
-  },
-  "bot_reached_avtr": {
-    "name": "WIRED Trigger: Bot Reaches User",
-    "description": "Triggers effects when the selected Bot reaches a user."
-  },
-  "bot_talk": {
-    "name": "WIRED Effect: Bot Talks to All Users",
-    "description": "Makes the selected Bot talk or shout to all users in the room."
-  },
-  "clock_counter": {
-    "name": "WIRED Trigger: Counter Reaches Set Time",
-    "description": "Activates effects when a counter reaches a predefined time."
-  },
-  "control_clock": {
-    "name": "WIRED Effect: Control Counter",
-    "description": "Starts, stops, or resets a counter in the room."
-  },
-  "not_user_performs_action": {
-    "name": "WIRED Negative Condition: User Is NOT Performing Action",
-    "description": "Allows triggering if the user is not performing a specific action."
-  },
-  "match_date": {
-    "name": "WIRED Condition: Date Matches",
-    "description": "Allows triggering if the current date matches a specified date."
-  },
-  "match_time": {
-    "name": "WIRED Condition: Time Matches",
-    "description": "Allows triggering if the current time matches a specified time."
-  },
-  "triggerer_match": {
-    "name": "WIRED Condition: Triggerer Matches",
-    "description": "Allows triggering if the triggering user matches specific criteria."
-  },
-  "not_has_handitem": {
-    "name": "WIRED Negative Condition: User DOESN'T Have Handitem",
-    "description": "Allows triggering if the user is not holding the specified handitem."
-  },
-  "user_performs_action": {
-    "name": "WIRED Trigger: User Is Performing Action",
-    "description": "Activates effects when the user performs a specific action."
-  },
-  "not_triggerer_match": {
-    "name": "WIRED Negative Condition: Triggerer DOESN'T Match",
-    "description": "Allows triggering if the triggering user does not match specific criteria."
-  },
-  "counter_time_matches": {
-    "name": "WIRED Condition: Counter Time Matches",
-    "description": "Allows triggering if a counter's time matches a specified value."
-  },
-  "team_has_rank": {
-    "name": "WIRED Condition: Team Is Winning",
-    "description": "Allows triggering if a specific team is currently leading in points."
-  },
-  "team_has_score": {
-    "name": "WIRED Condition: Team Has Score",
-    "description": "Allows triggering if a team has reached a predefined score."
-  },
-  "send_signal": {
-    "name": "WIRED Effect: Send Signal",
-    "description": "Sends a signal that can trigger other wired effects or conditions."
-  },
-  "click_furni": {
-    "name": "WIRED Trigger: User Clicks Furni",
-    "description": "Activates effects when a user clicks on a specified piece of furniture."
-  },
-  "recv_signal": {
-    "name": "WIRED Trigger: Receive Signal",
-    "description": "Activates effects when a predefined signal is received."
-  },
-  "stuff_state": {
-    "name": "WIRED Trigger: Furni State Is Changed",
-    "description": "Triggers effects when the state of a specified piece of furniture changes."
-  },
-  "set_altitude": {
-    "name": "WIRED Effect: Set Furni Altitude",
-    "description": "Changes the altitude of a selected piece of furniture, raising or lowering it."
-  },
-  "has_altitude": {
-    "name": "WIRED Condition: Furni Altitude Matches",
-    "description": "Allows triggering if the selected Furni is at a specific altitude."
-  },
-  "freeze": {
-    "name": "WIRED Effect: Freeze User",
-    "description": "Temporarily prevents a user from moving, effectively freezing them in place."
-  },
-  "rel_mov": {
-    "name": "WIRED Effect: Relative Furni Movement",
-    "description": "Moves furniture relative to its current position rather than to a specific location."
-  },
-  "period_short": {
-    "name": "WIRED Trigger: Repeat Effect (Short)",
-    "description": "Activates effects at shorter intervals than the standard periodical trigger."
-  },
-  "actor_dir": {
-    "name": "WIRED Condition: User Direction",
-    "description": "Allows triggering if the user is facing a specified direction."
-  },
-  "unfreeze": {
-    "name": "WIRED Effect: Unfreeze User",
-    "description": "Reverses the freeze effect, allowing a previously frozen user to move again."
-  },
-  "users_area": {
-    "name": "WIRED Selector: Users In Area",
-    "description": "Selects users within a specified area for targeted effects."
-  },
-  "furni_signal": {
-    "name": "WIRED Selector: Furni From Signal",
-    "description": "Selects furniture that has received a specific signal."
-  },
-  "users_byname": {
-    "name": "WIRED Selector: Users By Name",
-    "description": "Targets users by their specific names for personalized interactions."
-  },
-  "furni_to_furni": {
-    "name": "WIRED Effect: Move Furni To Furni",
-    "description": "Moves a piece of furniture to the location of another selected piece."
-  },
-  "furni_onfurni": {
-    "name": "WIRED Selector: Furni On Furni",
-    "description": "Identifies furniture placed on top of another piece."
-  },
-  "furni_altitude": {
-    "name": "WIRED Selector: Furni With Altitude",
-    "description": "Selects furniture based on its altitude."
-  },
-  "users_group": {
-    "name": "WIRED Selector: Users In Group",
-    "description": "Targets users who are members of a specified group."
-  },
-  "furni_area": {
-    "name": "WIRED Selector: Furni In Area",
-    "description": "Selects furniture within a predefined area."
-  },
-  "furni_bytype": {
-    "name": "WIRED Selector: Furni By Type",
-    "description": "Targets furniture of a specific type."
-  },
-  "slc_quantity": {
-    "name": "WIRED Condition: Selector Quantity",
-    "description": "Checks if the number of selected items meets a certain condition."
-  },
-  "valid_moves": {
-    "name": "WIRED Condition: Valid Moves",
-    "description": "Allows triggering if the intended furniture movement is valid and unobstructed."
-  },
-  "users_handitem": {
-    "name": "WIRED Selector: Users With Handitem",
-    "description": "Targets users holding a specific handitem."
-  },
-  "furni_picks": {
-    "name": "WIRED Selector: Furni Picks",
-    "description": "Allows for the selection of furniture based on specific criteria."
-  },
-  "users_signal": {
-    "name": "WIRED Selector: Users From Signal",
-    "description": "Targets users based on a received signal."
-  },
-  "users_byaction": {
-    "name": "WIRED Selector: Users By Action",
-    "description": "Selects users based on their actions, such as walking or speaking."
-  },
-  "furni_to_user": {
-    "name": "WIRED Effect: Move Furni To User",
-    "description": "Moves a piece of furniture to a user's location."
-  },
-  "users_onfurni": {
-    "name": "WIRED Selector: Users On Furni",
-    "description": "Identifies users who are on a piece of furniture."
-  },
-  "furni_neighborhood": {
-    "name": "WIRED Selector: Furni In Neighborhood",
-    "description": "Selects furniture within a certain proximity."
-  },
-  "users_bytype": {
-    "name": "WIRED Selector: Users By Type",
-    "description": "Targets users based on a type or classification."
-  },
-  "users_team": {
-    "name": "WIRED Selector: Users In Team",
-    "description": "Targets users who are part of a specified team."
-  },
-  "users_neighborhood": {
-    "name": "WIRED Selector: Users In Neighborhood",
-    "description": "Selects users within a certain area or proximity."
-  },
-  "furni_with_var": {
-    "name": "WIRED Selector: Furni With Variable",
-    "description": "Selects furniture items that have a specific variable assigned."
-  },
-  "var_changed": {
-    "name": "WIRED Trigger: Variable Changed",
-    "description": "Activates effects when the configured variable is changed."
-  },
-  "filter_furni_by_var": {
-    "name": "WIRED Filter: Furni With Highest/Lowest Variable",
-    "description": "Filters furniture to those with the highest or lowest values of a specific variable."
-  },
-  "var_val_match": {
-    "name": "WIRED Condition: Variable Value",
-    "description": "Allows triggering if a variable matches a specified value."
-  },
-  "leave_room": {
-    "name": "WIRED Trigger: User Leaves Room",
-    "description": "Activates effects when a user leaves the room."
-  },
-  "change_var_val": {
-    "name": "WIRED Effect: Change Variable Value",
-    "description": "Changes the value of a variable by setting, adding, or subtracting."
-  },
-  "filter_users_by_var": {
-    "name": "WIRED Filter: Users With Highest/Lowest Variable",
-    "description": "Filters users to those with the highest or lowest values of a specific variable."
-  },
-  "var_text_connector": {
-    "name": "Variable Add-on: Text Connector",
-    "description": "Allows combining text with variable values for messages."
-  },
-  "var_age_match": {
-    "name": "WIRED Condition: Variable Age",
-    "description": "Allows triggering if a variable was last changed within a specific time frame."
-  },
-  "text_output_variable": {
-    "name": "WIRED Text Add-on: Variable Placeholder",
-    "description": "Displays variable values within text messages to users."
-  },
-  "give_var": {
-    "name": "WIRED Effect: Give Variable",
-    "description": "Assigns a variable to a user or Furni."
-  },
-  "move_rotate_user": {
-    "name": "WIRED Effect: Move and Rotate User",
-    "description": "Moves and rotates the triggering user to a specified location and direction."
-  },
-  "remove_var": {
-    "name": "WIRED Effect: Remove Variable",
-    "description": "Removes a variable from a user or Furni."
-  },
-  "user_to_furni": {
-    "name": "WIRED Effect: Move User To Furni",
-    "description": "Moves the triggering user to the location of a selected Furni."
-  },
-  "text_output_username": {
-    "name": "WIRED Text Add-on: Username Placeholder",
-    "description": "Allows insertion of the triggering user's name into text messages."
-  },
-  "remote": {
-    "name": "WIRED Selector: Remote Selection",
-    "description": "Selects items or users from another room or location."
-  },
-  "neg_has_var": {
-    "name": "WIRED Negative Condition: Doesn't Have Variable",
-    "description": "Allows triggering if the user or Furni does not have a specific variable."
-  },
-  "text_input_variable": {
-    "name": "WIRED Text Add-on: Variable Capturer",
-    "description": "Captures user input as text and stores it in a variable."
-  },
-  "users_with_var": {
-    "name": "WIRED Selector: Users With Variable",
-    "description": "Selects users who have a specific variable assigned."
-  },
-  "has_var": {
-    "name": "WIRED Condition: Has Variable",
-    "description": "Allows triggering if the user or Furni has a specific variable."
-  },
-  "exec_in_order": {
-    "name": "WIRED Add-on: Execute Effect In Order",
-    "description": "Executes effects in a specific order."
-  },
-  "random": {
-    "name": "WIRED Add-on: Random Effect",
-    "description": "Only one random effect in this stack is triggered at a time."
-  },
-  "unseen": {
-    "name": "WIRED Add-on: Unseen Effect",
-    "description": "Only one previously unused effect in this stack is triggered at a time."
-  },
-  "or_eval": {
-    "name": "WIRED Add-on: At Least One Condition Is True",
-    "description": "Allows effects to trigger if any one condition in the stack is met."
-  },
-  "mov_physics": {
-    "name": "WIRED Add-on: Movement Physics",
-    "description": "Applies physics to furniture movement, making it respond realistically to obstacles."
-  },
-  "mov_no_animation": {
-    "name": "WIRED Add-on: Cancel Move Animation",
-    "description": "Moves furniture instantly without the moving animation."
-  },
-  "mov_carry_users": {
-    "name": "WIRED Add-on: Carry Users",
-    "description": "Carries users standing on moving furniture along with it."
-  },
-  "execution_limit": {
-    "name": "WIRED Add-on: Execution Limit",
-    "description": "Limits the number of times an effect can be executed."
-  },
-  "anim_time": {
-    "name": "WIRED Add-On: Animation Time",
-    "description": "Customizes the transition time from one position to another."
-  },
-  "filter_users": {
-    "name": "WIRED Filter: Filter To X Users",
-    "description": "Filters the selected users down to a specific number."
-  },
-  "filter_furni": {
-    "name": "WIRED Filter: Filter To X Furni",
-    "description": "Filters the selected Furni down to a specific number."
-  },
-  "context": {
-    "name": "WIRED Variable: Context Variable",
-    "description": "Stores temporary information used within the current wired interaction."
-  },
-  "user": {
-    "name": "WIRED Variable: User Variable",
-    "description": "Stores variables assigned to specific users."
-  },
-  "furni": {
-    "name": "WIRED Variable: Furni Variable",
-    "description": "Stores variables assigned to specific furniture items."
-  },
-  "reference": {
-    "name": "WIRED Variable: From Another Room",
-    "description": "Allows access to variables shared from another room."
-  },
-  "room": {
-    "name": "WIRED Variable: Global Variable",
-    "description": "Stores variables shared across the entire room."
-  },
-  "click_tile": {
-    "name": "WIRED Trigger: User Clicks Tile",
-    "description": "Activates effects when a user clicks on a floor tile."
-  },
-  "neg_send_signal": {
-    "name": "WIRED Negative Effect: Send Signal",
-    "description": "Sends a negative signal to cancel or negate previous signals."
-  },
-  "neg_call_stacks": {
-    "name": "WIRED Negative Effect: Execute Stacks",
-    "description": "Executes negative wired stacks to reverse effects."
+      "name": "WIRED Condition: User Count in Room",
+      "description": "Allows triggering if the user count in the room is within the defined limits."
+    },
+    "not_wearing_b": {
+      "name": "WIRED Negative Condition: NOT Wearing Badge",
+      "description": "Allows triggering if the user is not wearing a specified badge."
+    },
+    "stuff_is": {
+      "name": "WIRED Condition: Furni Matches",
+      "description": "Allows triggering if the Furni defined by the trigger matches one of the selected Furni or is of the same type."
+    },
+    "not_in_group": {
+      "name": "WIRED Negative Condition: NOT Group Member",
+      "description": "Allows triggering if the user is in a group room but is not a member of that group."
+    },
+    "not_stuff_is": {
+      "name": "WIRED Negative Condition: Furni DOESN'T Match",
+      "description": "Allows triggering if the Furni defined by the trigger does not match any of the selected Furni or is not of the same type."
+    },
+    "move_furni_to": {
+      "name": "WIRED Effect: Move Triggering Furni",
+      "description": "Moves the triggering Furni to the vicinity of one of the selected Furni."
+    },
+    "toggle_to_rnd": {
+      "name": "WIRED Effect: Toggle Furni to Random State",
+      "description": "Changes the state of the selected Furni to a random state."
+    },
+    "not_match_snap": {
+      "name": "WIRED Negative Condition: Furni States DON'T Match",
+      "description": "Allows triggering if the states of the selected Furni do not match."
+    },
+    "mute_triggerer": {
+      "name": "WIRED Effect: Mute User",
+      "description": "Mutes the triggering user, preventing them from speaking in the room."
+    },
+    "date_rng_active": {
+      "name": "WIRED Condition: Date and Time",
+      "description": "Allows setting a specific date and time range during which the wired effect can be triggered."
+    },
+    "bot_clothes": {
+      "name": "WIRED Effect: Bot Changes Clothes",
+      "description": "Changes the clothes of the selected Bot."
+    },
+    "bot_teleport": {
+      "name": "WIRED Effect: Teleport Bot to Furni",
+      "description": "Teleports the selected Bot to one of the chosen Furni."
+    },
+    "bot_reached_stf": {
+      "name": "WIRED Trigger: Bot Reaches Furni",
+      "description": "Triggers effects when the selected Bot reaches one of the chosen Furni."
+    },
+    "bot_follow_avatar": {
+      "name": "WIRED Effect: Bot Follows User",
+      "description": "Makes the selected Bot follow the triggering user."
+    },
+    "bot_give_handitem": {
+      "name": "WIRED Effect: Give Handitem",
+      "description": "Makes the selected Bot give the specified handitem to a user."
+    },
+    "bot_move": {
+      "name": "WIRED Effect: Bot Moves to Furni",
+      "description": "Moves the selected Bot to one of the chosen Furni."
+    },
+    "has_handitem": {
+      "name": "WIRED Condition: User Has Handitem",
+      "description": "Allows triggering if the user is holding the specified handitem."
+    },
+    "bot_talk_to_avatar": {
+      "name": "WIRED Effect: Bot Talks or Whispers to User",
+      "description": "Makes the selected Bot talk or whisper to the triggering user."
+    },
+    "bot_reached_avtr": {
+      "name": "WIRED Trigger: Bot Reaches User",
+      "description": "Triggers effects when the selected Bot reaches a user."
+    },
+    "bot_talk": {
+      "name": "WIRED Effect: Bot Talks to All Users",
+      "description": "Makes the selected Bot talk or shout to all users in the room."
+    },
+    "clock_counter": {
+      "name": "WIRED Trigger: Counter Reaches Set Time",
+      "description": "Activates effects when a counter reaches a predefined time."
+    },
+    "control_clock": {
+      "name": "WIRED Effect: Control Counter",
+      "description": "Starts, stops, or resets a counter in the room."
+    },
+    "not_user_performs_action": {
+      "name": "WIRED Negative Condition: User Is NOT Performing Action",
+      "description": "Allows triggering if the user is not performing a specific action."
+    },
+    "match_date": {
+      "name": "WIRED Condition: Date Matches",
+      "description": "Allows triggering if the current date matches a specified date."
+    },
+    "match_time": {
+      "name": "WIRED Condition: Time Matches",
+      "description": "Allows triggering if the current time matches a specified time."
+    },
+    "triggerer_match": {
+      "name": "WIRED Condition: Triggerer Matches",
+      "description": "Allows triggering if the triggering user matches specific criteria."
+    },
+    "not_has_handitem": {
+      "name": "WIRED Negative Condition: User DOESN'T Have Handitem",
+      "description": "Allows triggering if the user is not holding the specified handitem."
+    },
+    "user_performs_action": {
+      "name": "WIRED Trigger: User Is Performing Action",
+      "description": "Activates effects when the user performs a specific action."
+    },
+    "not_triggerer_match": {
+      "name": "WIRED Negative Condition: Triggerer DOESN'T Match",
+      "description": "Allows triggering if the triggering user does not match specific criteria."
+    },
+    "counter_time_matches": {
+      "name": "WIRED Condition: Counter Time Matches",
+      "description": "Allows triggering if a counter's time matches a specified value."
+    },
+    "team_has_rank": {
+      "name": "WIRED Condition: Team Is Winning",
+      "description": "Allows triggering if a specific team is currently leading in points."
+    },
+    "team_has_score": {
+      "name": "WIRED Condition: Team Has Score",
+      "description": "Allows triggering if a team has reached a predefined score."
+    },
+    "send_signal": {
+      "name": "WIRED Effect: Send Signal",
+      "description": "Sends a signal that can trigger other wired effects or conditions."
+    },
+    "click_furni": {
+      "name": "WIRED Trigger: User Clicks Furni",
+      "description": "Activates effects when a user clicks on a specified piece of furniture."
+    },
+    "recv_signal": {
+      "name": "WIRED Trigger: Receive Signal",
+      "description": "Activates effects when a predefined signal is received."
+    },
+    "stuff_state": {
+      "name": "WIRED Trigger: Furni State Is Changed",
+      "description": "Triggers effects when the state of a specified piece of furniture changes."
+    },
+    "set_altitude": {
+      "name": "WIRED Effect: Set Furni Altitude",
+      "description": "Changes the altitude of a selected piece of furniture, raising or lowering it."
+    },
+    "has_altitude": {
+      "name": "WIRED Condition: Furni Altitude Matches",
+      "description": "Allows triggering if the selected Furni is at a specific altitude."
+    },
+    "freeze": {
+      "name": "WIRED Effect: Freeze User",
+      "description": "Temporarily prevents a user from moving, effectively freezing them in place."
+    },
+    "rel_mov": {
+      "name": "WIRED Effect: Relative Furni Movement",
+      "description": "Moves furniture relative to its current position rather than to a specific location."
+    },
+    "period_short": {
+      "name": "WIRED Trigger: Repeat Effect (Short)",
+      "description": "Activates effects at shorter intervals than the standard periodical trigger."
+    },
+    "actor_dir": {
+      "name": "WIRED Condition: User Direction",
+      "description": "Allows triggering if the user is facing a specified direction."
+    },
+    "unfreeze": {
+      "name": "WIRED Effect: Unfreeze User",
+      "description": "Reverses the freeze effect, allowing a previously frozen user to move again."
+    },
+    "users_area": {
+      "name": "WIRED Selector: Users In Area",
+      "description": "Selects users within a specified area for targeted effects."
+    },
+    "furni_signal": {
+      "name": "WIRED Selector: Furni From Signal",
+      "description": "Selects furniture that has received a specific signal."
+    },
+    "users_byname": {
+      "name": "WIRED Selector: Users By Name",
+      "description": "Targets users by their specific names for personalized interactions."
+    },
+    "furni_to_furni": {
+      "name": "WIRED Effect: Move Furni To Furni",
+      "description": "Moves a piece of furniture to the location of another selected piece."
+    },
+    "furni_onfurni": {
+      "name": "WIRED Selector: Furni On Furni",
+      "description": "Identifies furniture placed on top of another piece."
+    },
+    "furni_altitude": {
+      "name": "WIRED Selector: Furni With Altitude",
+      "description": "Selects furniture based on its altitude."
+    },
+    "users_group": {
+      "name": "WIRED Selector: Users In Group",
+      "description": "Targets users who are members of a specified group."
+    },
+    "furni_area": {
+      "name": "WIRED Selector: Furni In Area",
+      "description": "Selects furniture within a predefined area."
+    },
+    "furni_bytype": {
+      "name": "WIRED Selector: Furni By Type",
+      "description": "Targets furniture of a specific type."
+    },
+    "slc_quantity": {
+      "name": "WIRED Condition: Selector Quantity",
+      "description": "Checks if the number of selected items meets a certain condition."
+    },
+    "valid_moves": {
+      "name": "WIRED Condition: Valid Moves",
+      "description": "Allows triggering if the intended furniture movement is valid and unobstructed."
+    },
+    "users_handitem": {
+      "name": "WIRED Selector: Users With Handitem",
+      "description": "Targets users holding a specific handitem."
+    },
+    "furni_picks": {
+      "name": "WIRED Selector: Furni Picks",
+      "description": "Allows for the selection of furniture based on specific criteria."
+    },
+    "users_signal": {
+      "name": "WIRED Selector: Users From Signal",
+      "description": "Targets users based on a received signal."
+    },
+    "users_byaction": {
+      "name": "WIRED Selector: Users By Action",
+      "description": "Selects users based on their actions, such as walking or speaking."
+    },
+    "furni_to_user": {
+      "name": "WIRED Effect: Move Furni To User",
+      "description": "Moves a piece of furniture to a user's location."
+    },
+    "users_onfurni": {
+      "name": "WIRED Selector: Users On Furni",
+      "description": "Identifies users who are on a piece of furniture."
+    },
+    "furni_neighborhood": {
+      "name": "WIRED Selector: Furni In Neighborhood",
+      "description": "Selects furniture within a certain proximity."
+    },
+    "users_bytype": {
+      "name": "WIRED Selector: Users By Type",
+      "description": "Targets users based on a type or classification."
+    },
+    "users_team": {
+      "name": "WIRED Selector: Users In Team",
+      "description": "Targets users who are part of a specified team."
+    },
+    "users_neighborhood": {
+      "name": "WIRED Selector: Users In Neighborhood",
+      "description": "Selects users within a certain area or proximity."
+    },
+    "furni_with_var": {
+      "name": "WIRED Selector: Furni With Variable",
+      "description": "Selects furniture items that have a specific variable assigned."
+    },
+    "var_changed": {
+      "name": "WIRED Trigger: Variable Changed",
+      "description": "Activates effects when the configured variable is changed."
+    },
+    "filter_furni_by_var": {
+      "name": "WIRED Filter: Furni With Highest/Lowest Variable",
+      "description": "Filters furniture to those with the highest or lowest values of a specific variable."
+    },
+    "var_val_match": {
+      "name": "WIRED Condition: Variable Value",
+      "description": "Allows triggering if a variable matches a specified value."
+    },
+    "leave_room": {
+      "name": "WIRED Trigger: User Leaves Room",
+      "description": "Activates effects when a user leaves the room."
+    },
+    "change_var_val": {
+      "name": "WIRED Effect: Change Variable Value",
+      "description": "Changes the value of a variable by setting, adding, or subtracting."
+    },
+    "filter_users_by_var": {
+      "name": "WIRED Filter: Users With Highest/Lowest Variable",
+      "description": "Filters users to those with the highest or lowest values of a specific variable."
+    },
+    "var_text_connector": {
+      "name": "Variable Add-on: Text Connector",
+      "description": "Allows combining text with variable values for messages."
+    },
+    "var_age_match": {
+      "name": "WIRED Condition: Variable Age",
+      "description": "Allows triggering if a variable was last changed within a specific time frame."
+    },
+    "text_output_variable": {
+      "name": "WIRED Text Add-on: Variable Placeholder",
+      "description": "Displays variable values within text messages to users."
+    },
+    "give_var": {
+      "name": "WIRED Effect: Give Variable",
+      "description": "Assigns a variable to a user or Furni."
+    },
+    "move_rotate_user": {
+      "name": "WIRED Effect: Move and Rotate User",
+      "description": "Moves and rotates the triggering user to a specified location and direction."
+    },
+    "remove_var": {
+      "name": "WIRED Effect: Remove Variable",
+      "description": "Removes a variable from a user or Furni."
+    },
+    "user_to_furni": {
+      "name": "WIRED Effect: Move User To Furni",
+      "description": "Moves the triggering user to the location of a selected Furni."
+    },
+    "text_output_username": {
+      "name": "WIRED Text Add-on: Username Placeholder",
+      "description": "Allows insertion of the triggering user's name into text messages."
+    },
+    "remote": {
+      "name": "WIRED Selector: Remote Selection",
+      "description": "Selects items or users from another room or location."
+    },
+    "neg_has_var": {
+      "name": "WIRED Negative Condition: Doesn't Have Variable",
+      "description": "Allows triggering if the user or Furni does not have a specific variable."
+    },
+    "text_input_variable": {
+      "name": "WIRED Text Add-on: Variable Capturer",
+      "description": "Captures user input as text and stores it in a variable."
+    },
+    "users_with_var": {
+      "name": "WIRED Selector: Users With Variable",
+      "description": "Selects users who have a specific variable assigned."
+    },
+    "has_var": {
+      "name": "WIRED Condition: Has Variable",
+      "description": "Allows triggering if the user or Furni has a specific variable."
+    },
+    "exec_in_order": {
+      "name": "WIRED Add-on: Execute Effect In Order",
+      "description": "Executes effects in a specific order."
+    },
+    "random": {
+      "name": "WIRED Add-on: Random Effect",
+      "description": "Only one random effect in this stack is triggered at a time."
+    },
+    "unseen": {
+      "name": "WIRED Add-on: Unseen Effect",
+      "description": "Only one previously unused effect in this stack is triggered at a time."
+    },
+    "or_eval": {
+      "name": "WIRED Add-on: At Least One Condition Is True",
+      "description": "Allows effects to trigger if any one condition in the stack is met."
+    },
+    "mov_physics": {
+      "name": "WIRED Add-on: Movement Physics",
+      "description": "Applies physics to furniture movement, making it respond realistically to obstacles."
+    },
+    "mov_no_animation": {
+      "name": "WIRED Add-on: Cancel Move Animation",
+      "description": "Moves furniture instantly without the moving animation."
+    },
+    "mov_carry_users": {
+      "name": "WIRED Add-on: Carry Users",
+      "description": "Carries users standing on moving furniture along with it."
+    },
+    "execution_limit": {
+      "name": "WIRED Add-on: Execution Limit",
+      "description": "Limits the number of times an effect can be executed."
+    },
+    "anim_time": {
+      "name": "WIRED Add-On: Animation Time",
+      "description": "Customizes the transition time from one position to another."
+    },
+    "filter_users": {
+      "name": "WIRED Filter: Filter To X Users",
+      "description": "Filters the selected users down to a specific number."
+    },
+    "filter_furni": {
+      "name": "WIRED Filter: Filter To X Furni",
+      "description": "Filters the selected Furni down to a specific number."
+    },
+    "context": {
+      "name": "WIRED Variable: Context Variable",
+      "description": "Stores temporary information used within the current wired interaction."
+    },
+    "user": {
+      "name": "WIRED Variable: User Variable",
+      "description": "Stores variables assigned to specific users."
+    },
+    "furni": {
+      "name": "WIRED Variable: Furni Variable",
+      "description": "Stores variables assigned to specific furniture items."
+    },
+    "reference": {
+      "name": "WIRED Variable: From Another Room",
+      "description": "Allows access to variables shared from another room."
+    },
+    "room": {
+      "name": "WIRED Variable: Global Variable",
+      "description": "Stores variables shared across the entire room."
+    },
+    "click_tile": {
+      "name": "WIRED Trigger: User Clicks Tile",
+      "description": "Activates effects when a user clicks on a floor tile."
+    },
+    "neg_send_signal": {
+      "name": "WIRED Negative Effect: Send Signal",
+      "description": "Sends a negative signal to cancel or negate previous signals."
+    },
+    "neg_call_stacks": {
+      "name": "WIRED Negative Effect: Execute Stacks",
+      "description": "Executes negative wired stacks to reverse effects."
+    }
   }
-  }
-
 }
