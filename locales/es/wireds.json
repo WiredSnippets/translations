@@ -613,7 +613,7 @@
       "description": "Variable asignada a la sala, útil para almacenar información general. Puede ser permanente, temporal o compartida entre salas."
     },
     "click_tile": {
-      "name": "Causante WIRED: Usuario hace click en baldosas",
+      "name": "Causante WIRED: Usuario hace click en baldosa",
       "description": "Se activa cuando un usuario hace clic en una baldosa del suelo."
     },
     "neg_send_signal": {
