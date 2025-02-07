@@ -623,6 +623,10 @@
     "neg_call_stacks": {
       "name": "WIRED Negative Effect: Execute Stacks",
       "description": "Executes negative wired stacks to reverse effects."
+    },
+    "teleport_to_room": {
+      "name": "WIRED Effect: Teleport to Room",
+      "description": "Teleports the triggering user to another room."
     }
   }
 }

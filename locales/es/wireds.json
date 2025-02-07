@@ -623,6 +623,10 @@
     "neg_call_stacks": {
       "name": "Efecto WIRED inverso: Apilar",
       "description": "Si la condición no se cumple, ejecuta los efectos seleccionados."
+    },
+    "teleport_to_room": {
+      "name": "Efecto WIRED: Teletransportar a Sala",
+      "description": "Teletransporta al usuario desencadenante a otra sala."
     }
   }
 }

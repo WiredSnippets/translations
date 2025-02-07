@@ -627,6 +627,10 @@
     "room": {
       "name": "VARIÁVEL WIRED: Variável Global",
       "description": "UNKNOWN"
+    },
+    "teleport_to_room": {
+      "name": "EFEITO WIRED: Teletransportar para Quarto",
+      "description": "Teletransporta o usuário desencadeante para outro quarto."
     }
   }
 }

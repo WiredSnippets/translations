@@ -627,6 +627,10 @@
     "room": {
       "name": "WIRED Variable : Variable globale",
       "description": "UNKNOWN"
+    },
+    "teleport_to_room": {
+      "name": "Effet WIRED : Teleporter vers une autre salle",
+      "description": "Teleporte l'utilisateur déclencheur vers une autre salle."
     }
   }
 }
