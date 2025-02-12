@@ -42,7 +42,7 @@
     },
     "state_changed": {
       "name": "WIRED Trigger: Furni Is Used",
-      "description": "Activates effects when the state of a Furni changes, such as when it's double-clicked."
+      "description": "Triggers effects when the state of a Furni changes, such as when it's double-clicked."
     },
     "periodically": {
       "name": "WIRED Trigger: Repeat Effect",
@@ -50,7 +50,7 @@
     },
     "score_achieved": {
       "name": "WIRED Trigger: Score Is Achieved",
-      "description": "Activates effects when a team reaches a specified score in a game."
+      "description": "Triggers effects when a team reaches a specified score in a game."
     },
     "teleport_to": {
       "name": "WIRED Effect: Teleport To Furni",
@@ -58,7 +58,7 @@
     },
     "says_something": {
       "name": "WIRED Trigger: User Says Keyword",
-      "description": "Activates effects when a user says a specific word or phrase."
+      "description": "Triggers effects when a user says a specific word or phrase."
     },
     "walks_off_furni": {
       "name": "WIRED Trigger: User Walks Off Furni",
@@ -70,7 +70,7 @@
     },
     "game_ends": {
       "name": "WIRED Trigger: Game Ends",
-      "description": "Activates effects when a game in the room ends."
+      "description": "Triggers effects when a game in the room ends."
     },
     "show_message": {
       "name": "WIRED Effect: Show Message",
@@ -82,7 +82,7 @@
     },
     "enter_room": {
       "name": "WIRED Trigger: User Enters Room",
-      "description": "Activates effects when a user enters the room."
+      "description": "Triggers effects when a user enters the room."
     },
     "toggle_state": {
       "name": "WIRED Effect: Toggle Furni State",
@@ -114,7 +114,7 @@
     },
     "game_starts": {
       "name": "WIRED Trigger: Game Starts",
-      "description": "Activates effects when a game starts in the room."
+      "description": "Triggers effects when a game starts in the room."
     },
     "walks_on_furni": {
       "name": "WIRED Trigger: User Walks On Furni",
@@ -294,7 +294,7 @@
     },
     "clock_counter": {
       "name": "WIRED Trigger: Counter Reaches Set Time",
-      "description": "Activates effects when a counter reaches a predefined time."
+      "description": "Triggers effects when a counter reaches a predefined time."
     },
     "control_clock": {
       "name": "WIRED Effect: Control Counter",
@@ -322,7 +322,7 @@
     },
     "user_performs_action": {
       "name": "WIRED Trigger: User Is Performing Action",
-      "description": "Activates effects when the user performs a specific action."
+      "description": "Triggers effects when the user performs a specific action."
     },
     "not_triggerer_match": {
       "name": "WIRED Negative Condition: Triggerer DOESN'T Match",
@@ -346,11 +346,11 @@
     },
     "click_furni": {
       "name": "WIRED Trigger: User Clicks Furni",
-      "description": "Activates effects when a user clicks on a specified piece of furniture."
+      "description": "Triggers effects when a user clicks on a specified piece of furniture."
     },
     "recv_signal": {
       "name": "WIRED Trigger: Receive Signal",
-      "description": "Activates effects when a predefined signal is received."
+      "description": "Triggers effects when a predefined signal is received."
     },
     "stuff_state": {
       "name": "WIRED Trigger: Furni State Is Changed",
@@ -374,7 +374,7 @@
     },
     "period_short": {
       "name": "WIRED Trigger: Repeat Effect (Short)",
-      "description": "Activates effects at shorter intervals than the standard periodical trigger."
+      "description": "Triggers effects at shorter intervals than the standard periodical trigger."
     },
     "actor_dir": {
       "name": "WIRED Condition: User Direction",
@@ -474,7 +474,7 @@
     },
     "var_changed": {
       "name": "WIRED Trigger: Variable Changed",
-      "description": "Activates effects when the configured variable is changed."
+      "description": "Triggers effects when the configured variable is changed."
     },
     "filter_furni_by_var": {
       "name": "WIRED Filter: Furni With Highest/Lowest Variable",
@@ -486,7 +486,7 @@
     },
     "leave_room": {
       "name": "WIRED Trigger: User Leaves Room",
-      "description": "Activates effects when a user leaves the room."
+      "description": "Triggers effects when a user leaves the room."
     },
     "change_var_val": {
       "name": "WIRED Effect: Change Variable Value",
@@ -614,7 +614,7 @@
     },
     "click_tile": {
       "name": "WIRED Trigger: User Clicks Tile",
-      "description": "Activates effects when a user clicks on a floor tile."
+      "description": "Triggers effects when a user clicks on a floor tile."
     },
     "neg_send_signal": {
       "name": "WIRED Negative Effect: Send Signal",
