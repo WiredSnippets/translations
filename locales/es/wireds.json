@@ -321,7 +321,7 @@
       "description": "El efecto se activa si el usuario no sostiene el ítem de mano especificado."
     },
     "user_performs_action": {
-      "name": "Causante WIRED: Usuario está realizando acción",
+      "name": "Causante WIRED: Usuario ejecuta acción",
       "description": "Se activa cuando el usuario desencadenante realiza una acción específica."
     },
     "not_triggerer_match": {

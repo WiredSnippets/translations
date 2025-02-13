@@ -118,23 +118,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Saludar",
+      "1": "Lanzar Beso",
+      "2": "Risas",
+      "3": "Confirmado",
       "4": "Despierto",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Ausente",
+      "6": "Sentarse",
+      "7": "De pie",
       "8": "Tumbado",
       "9": "Nadar",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Señales",
+      "11": "Bailar",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Bailar",
+        "2": "Pogo Mogo",
+        "3": "Duck Funk",
+        "4": "The Rollie"
       },
       "sign": {
         "0": "0",
