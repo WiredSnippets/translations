@@ -40,9 +40,12 @@
       "name_length": "Yer tutucu uzunluğu 1 ile 40 karakter arasında olmalıdır.",
       "name_syntax": "Yer tutucu adı yalnızca harf, sayı veya \"_\" karakterlerinden oluşabilir."
     },
+    "reference_not_found": "Referans bulunamadı",
     "require_antenna_furni": "Yalnızca anten mobisi seçilebilir.",
     "require_click_tiles": "Yalnızca görünmez tıklamalı mobiler seçilebilir.",
     "require_counter_furni": "Yalnızca sayaç mobisi seçilebilir.",
+    "require_room_linker": "Sadece kabloyla bağlı oda bağlayıcıları seçilebilir!",
+    "staff_or_owner_only": "Bu değişiklik yalnızca Habbo Personeli veya oda sahibi tarafından yapılabilir",
     "title": "Güncelleme başarısız",
     "too_much_text": "Düzenekli metinler en fazla {{limit}} karakterden oluşabilir.",
     "username_length": "Kullanıcı adı {{max_username_length}} karakterden uzun olamaz!",
@@ -114,23 +117,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "El salla",
+      "1": "Patlayıcı Öpücük",
+      "2": "Gülmek",
+      "3": "Saygı duy",
       "4": "Canlı",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Uyumak",
+      "6": "Otur",
+      "7": "Kalk",
       "8": "Uzan",
       "9": "Yüz",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "İşaret",
+      "11": "Dans Et",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Dans Et",
+        "2": "Pogo Mogo",
+        "3": "Ördek Funk",
+        "4": "Rollie"
       },
       "sign": {
         "0": "0",
@@ -187,6 +190,11 @@
     "chatcontains": "Anahtar kelime içerir",
     "chattriggertype": "Tür seç:",
     "choose_type": "Tür seç:",
+    "click_user": {
+      "block_menu_open": "Avatar menüsünü açma",
+      "do_not_rotate": "Kullanıcıyı döndürme",
+      "settings": "Bir kullanıcıya tıklandığında:"
+    },
     "clock_control": {
       "0": "Başla",
       "1": "Dur",
@@ -215,6 +223,10 @@
       "state": "Mevcut mobi durumu"
     },
     "conditions": "Sağlanması gereken Mobi kriterini seç:",
+    "create_subvariables": {
+      "advanced": "Gelişmiş alt değişkenler:",
+      "title": "Alt değişkenler oluştur:"
+    },
     "dance_filter": "Dansa göre filtrele",
     "dance_selection": "Dans:",
     "delay": "{{seconds}} saniyeliğine Gecikme Efekti",
@@ -246,14 +258,16 @@
     "freeze": {
       "cancel_on_teleport": "Işınlanırken donmayı çöz",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Donuk",
+        "2": "Röntgen",
+        "3": "Paskalya Civcivi",
+        "4": "Kum tuzağı"
       },
       "effect_selection": "Bir efekt seç:"
     },
+    "from_another_room": "Başka bir odadan",
+    "from_value": "Değerden",
     "groupselection": "Grup seç:",
     "grouptype": {
       "0": "Mevcut grup",
@@ -264,6 +278,32 @@
       "minutes": "Süre: {{dk}} dk"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "Temel XP:",
+      "increase_factor": "Artış oranı (%):",
+      "max_level": "Maksimum seviye:",
+      "mode": {
+        "0": "Manuel giriş",
+        "1": "Doğrusal",
+        "2": "Üssel",
+        "title": "İlerleme modu:"
+      },
+      "preview": {
+        "entry": "Seviye: {{lvl}} - XP: {{xp}}",
+        "title": "Seviye/XP önizlemesi:"
+      },
+      "step_size": "Adım boyutu:",
+      "subvariable": {
+        "0": "Mevcut Seviye:",
+        "1": "Mevcut XP:",
+        "2": "Seviye ilerlemesi:",
+        "3": "Seviye ilerlemesi (%):",
+        "4": "Toplam XP ihtiyacı:",
+        "5": "Kalan XP:",
+        "6": "Maksimuma ulaşıldı mı:",
+        "7": "Maksimum seviye:"
+      }
+    },
     "message": "Mesaj:",
     "movefurni": {
       "0": "Hareket yok",
@@ -308,6 +348,10 @@
     },
     "pickamount": "{{picks}} etkilerini seç",
     "picktriggerer": "Tetikleyicinin adını seç:",
+    "placeholder_selection": {
+      "tooltip": "Bir yer tutucu seç",
+      "title": "Yer tutucu seç:"
+    },
     "placement": {
       "1": "1inci",
       "2": "2nci",
@@ -370,6 +414,10 @@
       "title": "Şu durumda tetiklemeye izin ver:"
     },
     "requiredformationsize": "En az {{furnis}} Mobinin durumu / konumu uygunsa",
+    "room_selection": {
+      "tooltip": "Bir oda seçi",
+      "title": "Oda seç:"
+    },
     "rotatefurni": {
       "0": "Döndürme yok",
       "1": "Saat yönünde döndür",
@@ -460,6 +508,8 @@
       },
       "users": {
         "0": "Tetikleyen kullanıcıyı kullan",
+        "10": "Hedef kullanıcı",
+        "11": "Tıklanan kullanıcı",
         "100": "Adı belirtilen botu kullan",
         "101": "Adı belirtilen kullanıcıyı kullan",
         "200": "Seçicideki kullanıcıları kullan",
@@ -582,6 +632,33 @@
       "weekday_selection": "Haftanın günü:",
       "year_selection": "Yıl:"
     },
+    "time_util": {
+      "advanced_info": "Aşağıdaki alt değişkenler 1970 yılından itibaren saymaya başlar. Bu değişkenleri, iki zaman damgası arasındaki zaman farkını karşılaştırmak için kullanabilirsin.",
+      "mode": {
+        "0": "Değer",
+        "1": "Oluşturma zamanı",
+        "2": "Son güncelleme zamanı"
+      },
+      "subvariable": {
+        "1": "Milisaniye",
+        "2": "Saniye",
+        "3": "Dakika",
+        "4": "Saat",
+        "5": "Haftanın günü",
+        "6": "Ayın günü",
+        "7": "Yılın günü",
+        "8": "Yılın haftası",
+        "9": "Yılın ayı",
+        "10": "Yıl",
+        "20": "Milisaniye",
+        "21": "Saniye",
+        "22": "Dakika",
+        "23": "Saat",
+        "24": "Gün",
+        "25": "Hafta",
+        "26": "Ay"
+      }
+    },
     "toggletype": {
       "0": "Sonraki duruma geç",
       "1": "Önceki duruma geç"
@@ -668,10 +745,10 @@
         "60": "Mutlak değer",
         "100": "Bitsel VE",
         "101": "Bitsel VEYA",
-        "102": "Bitsel DIŞLAMALI VEYA",
+        "102": "Bitsel DIŞLAYICI VEYA",
         "103": "Bitsel DEĞİL",
         "104": "Sola kaydırma (<<)",
-        "105": "Sağa kaydırma (<<)",
+        "105": "Sağa kaydırma (>>)",
         "advanced": "...gelişmiş göster",
         "tooltip": "Bir operasyon seç",
         "title": "Operasyon:"
@@ -786,6 +863,20 @@
     "group": "Grup seç",
     "handitem": "El malzemesi seç",
     "sign": "İşaret seç"
+  },
+  "variable_picker": {
+    "empty": "Gösterilecek içerik yok",
+    "search": "Bir değişken ara",
+    "tab": {
+      "all": "Tüm değişkenler",
+      "dynamic": "Akıllı değişkenler",
+      "internal": "Dahili değişkenler",
+      "recent": "Son kullanılan değişkenler",
+      "search": "Ara",
+      "user_created": "Kullanıcı tarafından oluşturulan değişkenler"
+    },
+    "tooltip_disabled": "Bu bağlamda seçilemez",
+    "tooltip_not_selectable": "Seçilemez, ancak bazı iç içe değişkenler seçilebilir"
   },
   "variables": {
     "availability_change": {

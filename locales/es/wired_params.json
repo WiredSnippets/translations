@@ -40,9 +40,12 @@
       "name_length": "El texto de muestra tiene que tener entre 1 y 40 caracteres.",
       "name_syntax": "El texto de muestra solo puede contener letras, números o \"_\""
     },
+    "reference_not_found": "Referencia no encontrada",
     "require_antenna_furni": "Solo se pueden seleccionar furnis de antena.",
     "require_click_tiles": "Solo se pueden seleccionar baldosas de clic invisible.",
     "require_counter_furni": "¡Solo se pueden seleccionar contadores/cronómetros!",
+    "require_room_linker": "¡Solo se pueden seleccionar wired conecta salas!",
+    "staff_or_owner_only": "Esta modificación solo puede realizarla un Staff de Habbo o el dueño de la sala",
     "title": "Actualización fallida",
     "too_much_text": "Los textos en los Wired pueden tener como máximo {{limit}} caracteres.",
     "username_length": "¡El nombre de usuario no puede exceder los {{max_username_length}} caracteres!",
@@ -128,7 +131,7 @@
       "7": "De pie",
       "8": "Tumbado",
       "9": "Nadar",
-      "10": "Señales",
+      "10": "Entrar",
       "11": "Bailar",
       "dance": {
         "1": "Bailar",
@@ -191,6 +194,11 @@
     "chatcontains": "Contiene palabra clave",
     "chattriggertype": "Elige tipo:",
     "choose_type": "Elegir tipo:",
+    "click_user": {
+      "block_menu_open": "No abrir el menú del avatar",
+      "do_not_rotate": "No rotar",
+      "settings": "Cuando se hace clic en un usuario:"
+    },
     "clock_control": {
       "0": "Empezar",
       "1": "Parar",
@@ -219,6 +227,10 @@
       "state": "Estado actual del Furni"
     },
     "conditions": "Elige el criterio a programar:",
+    "create_subvariables": {
+      "advanced": "Subvariables avanzadas:",
+      "title": "Crear subvariables:"
+    },
     "dance_filter": "Filtrar por baile",
     "dance_selection": "Baile:",
     "delay": "Retrasar Efecto unos {{seconds}} segundos",
@@ -250,14 +262,16 @@
     "freeze": {
       "cancel_on_teleport": "Descongelar al teletransportarse",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Congelado",
+        "2": "Rayos X",
+        "3": "Pajaritos",
+        "4": "Trampa de arena"
       },
       "effect_selection": "Elige un efecto:"
     },
+    "from_another_room": "Desde otra sala",
+    "from_value": "Desde un valor",
     "groupselection": "Elige grupo:",
     "grouptype": {
       "0": "Grupo actual",
@@ -268,6 +282,32 @@
       "minutes": "Duración: {{minutes}} minutos"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "XP base:",
+      "increase_factor": "Factor de incremento (%):",
+      "max_level": "Nivel máximo:",
+      "mode": {
+        "0": "Entrada manual",
+        "1": "Lineal",
+        "2": "Exponencial",
+        "title": "Progreso:"
+      },
+      "preview": {
+        "entry": "Nivel: {{lvl}} - XP: {{xp}}",
+        "title": "Vista previa de nivel/xp:"
+      },
+      "step_size": "Tamaño del paso:",
+      "subvariable": {
+        "0": "Nivel actual:",
+        "1": "XP actual:",
+        "2": "Nivel de progreso",
+        "3": "Nivel de progreso %:",
+        "4": "XP total requerido:",
+        "5": "XP restante:",
+        "6": "Está al máximo:",
+        "7": "Nivel máximo:"
+      }
+    },
     "message": "¿Cuál es el mensaje?:",
     "movefurni": {
       "0": "Sin movimiento",
@@ -312,6 +352,10 @@
     },
     "pickamount": "Recoger {{picks}} efectos",
     "picktriggerer": "Elige causante:",
+    "placeholder_selection": {
+      "tooltip": "Elige un marcador de posición",
+      "title": "Elegir marcador de posición:"
+    },
     "placement": {
       "1": "1º",
       "2": "2º",
@@ -374,6 +418,10 @@
       "title": "Los Causantes sólo funcionarán si..."
     },
     "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
+    "room_selection": {
+      "tooltip": "Elige una sala",
+      "title": "Elegir sala:"
+    },
     "rotatefurni": {
       "0": "Sin rotación",
       "1": "Rotar según las agujas del reloj",
@@ -464,6 +512,8 @@
       },
       "users": {
         "0": "Utilizar el usuario desencadenante",
+        "10": "El usuario alcanzado",
+        "11": "El usuario seleccionado",
         "100": "Utilizar el bot especificado por nombre",
         "101": "Utilizar el usuario especificado por nombre",
         "200": "Utilizar usuarios de Selector",
@@ -585,6 +635,33 @@
       },
       "weekday_selection": "Día de la semana:",
       "year_selection": "Año:"
+    },
+    "time_util": {
+      "advanced_info": "Las subvariables inferiores comienzan a contar desde 1970. Puedes usarlas para comparar la cantidad de unidades de tiempo entre 2 registros de hora.",
+      "mode": {
+        "0": "Valor",
+        "1": "Fecha de creación",
+        "2": "Fecha de última modificación"
+      },
+      "subvariable": {
+        "1": "Milisegundos",
+        "2": "Segundo",
+        "3": "Minuto",
+        "4": "Hora",
+        "5": "Día de la semana",
+        "6": "Día del mes",
+        "7": "Día del año",
+        "8": "Semana del año",
+        "9": "Mes del año",
+        "10": "Año",
+        "20": "Milisegundos",
+        "21": "Segundo",
+        "22": "Minuto",
+        "23": "Hora",
+        "24": "Día",
+        "25": "Semana",
+        "26": "Mes"
+      }
     },
     "toggletype": {
       "0": "Pasar al siguiente estado",
@@ -787,6 +864,20 @@
     "group": "Seleccionar grupo",
     "handitem": "Selecciona el ítem de mano",
     "sign": "Elige señal"
+  },
+  "variable_picker": {
+    "empty": "Nada que mostrar",
+    "search": "Busca una variable",
+    "tab": {
+      "all": "Todas las variables",
+      "dynamic": "Variables inteligentes",
+      "internal": "Variables internas",
+      "recent": "Variables recientes",
+      "search": "Buscar",
+      "user_created": "El usuario ha creado variables"
+    },
+    "tooltip_disabled": "No se puede seleccionar en este contexto.",
+    "tooltip_not_selectable": "No se puede seleccionar, pero se pueden seleccionar algunas variables enlazadas."
   },
   "variables": {
     "availability_change": {

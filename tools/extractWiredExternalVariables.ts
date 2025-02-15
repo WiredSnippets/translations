@@ -16,7 +16,6 @@ async function convertTxtResultToJson(
   const data = await response.text();
 
   const match = data.match(regex);
-
   if (!match || match.length < 2) {
     console.log("No external variables found");
     return;
@@ -24,42 +23,54 @@ async function convertTxtResultToJson(
 
   const externalVariablesContent = match[1].trim();
   const lines = externalVariablesContent.split("\n");
+  const jsonResult: Record<string, any> = {};
 
-  const jsonResult: { [key: string]: any } = {};
+  const processLine = (line: string) => {
+    const eqIndex = line.indexOf("=");
+    if (eqIndex === -1) return;
 
-  lines.forEach((line: string) => {
+    const rawKey = line.substring(0, eqIndex).trim();
+    let value = line.substring(eqIndex + 1).trim();
+    if (!rawKey || !value) return;
 
-    const index = line.indexOf("=");
-    if (index === -1) return;
+    let keys = rawKey.split(".");
+    if (keys[0] === "wiredfurni") {
+      keys = keys.slice(1);
+    }
 
-    const key = line.substring(0, index).trim();
-    let value = line.substring(index + 1).trim();
+    value = removeHtmlTags(value).replace(/%(\w+)%/g, "{{$1}}");
 
-    if (key && value) {
-      const keys = key.split(".");
+    keys.reduce((current, key, idx) => {
+      if (idx === keys.length - 1) {
+        if (typeof current[key] === "object" && current[key] !== null) {
+          current[key].title = value;
+          return current;
+        }
 
-      if (keys[0] === "wiredfurni") {
-        keys.shift();
+        if (value.includes('${')) {
+          const referencedKey = value.replace('${', '').replace('}', '');
+          const matchValue = data.match(new RegExp(`^${referencedKey}=([^\n]+)$`, "m"));
+          if (matchValue) {
+            const parts = matchValue[0].split("=");
+            if (parts[0] && parts[1]) {
+              current[key] = parts[1].trim();
+              return current;
+            }
+          }
+        }
+
+        current[key] = value;
+        return current;
       }
 
-      let current = jsonResult;
+      if (!current[key] || typeof current[key] !== "object") {
+        current[key] = {};
+      }
+      return current[key];
+    }, jsonResult);
+  };
 
-      value = removeHtmlTags(value).replace(/%(\w+)%/g, "{{$1}}");
-
-      keys.forEach((part: string, index: number) => {
-        if (index === keys.length - 1) {
-          if (typeof current[part] === "object" && current[part] !== null) {
-            current[part]["title"] = value;
-          } else {
-            current[part] = value;
-          }
-        } else {
-          current[part] = current[part] || {};
-          current = current[part];
-        }
-      });
-    }
-  });
+  lines.forEach(processLine);
 
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
@@ -69,6 +80,7 @@ async function convertTxtResultToJson(
   const filePath = path.join(folderPath, "wired_params.json");
   await fs.writeFile(filePath, JSON.stringify(jsonResult, null, 2));
 }
+
 
 (async () => {
   const countries = ["br", "de", "en", "es", "fi", "fr", "it", "nl", "tr"];

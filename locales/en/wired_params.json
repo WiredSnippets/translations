@@ -40,9 +40,12 @@
       "name_length": "Placeholder length must be between 1 and 40 characters.",
       "name_syntax": "Placeholder must only have letters, numbers, or \"_\" characters."
     },
+    "reference_not_found": "Reference was not found",
     "require_antenna_furni": "Can only select antenna furni.",
     "require_click_tiles": "Can only select invisible click furniture.",
     "require_counter_furni": "Can only select counter furni.",
+    "require_room_linker": "Can only select wired room linkers!",
+    "staff_or_owner_only": "This modification can only be made by Habbo Staff or the room owner",
     "title": "Update failed",
     "too_much_text": "Wired texts can be at most {{limit}} characters.",
     "username_length": "A username can not be longer than {{max_username_length}} characters!",
@@ -118,23 +121,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Wave",
+      "1": "Blow",
+      "2": "Laugh",
+      "3": "Thumbs up",
       "4": "Awake",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Idle",
+      "6": "Sit",
+      "7": "Stand",
       "8": "Lay",
       "9": "Swim",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Sign",
+      "11": "Dance",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Dance",
+        "2": "Pogo Mogo",
+        "3": "Duck Funk",
+        "4": "The Rollie"
       },
       "sign": {
         "0": "0",
@@ -191,6 +194,11 @@
     "chatcontains": "Contains keyword",
     "chattriggertype": "Choose type:",
     "choose_type": "Choose type:",
+    "click_user": {
+      "block_menu_open": "Do not open avatar menu",
+      "do_not_rotate": "Do not rotate",
+      "settings": "When a user is clicked:"
+    },
     "clock_control": {
       "0": "Start",
       "1": "Stop",
@@ -219,6 +227,10 @@
       "state": "Current furni state"
     },
     "conditions": "Select Furni criteria that have to be matched:",
+    "create_subvariables": {
+      "advanced": "Advanced subvariables:",
+      "title": "Create subvariables:"
+    },
     "dance_filter": "Filter by dance",
     "dance_selection": "Dance:",
     "delay": "Delay Effect for {{seconds}} seconds",
@@ -250,14 +262,16 @@
     "freeze": {
       "cancel_on_teleport": "Unfreeze when teleporting",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Frozen",
+        "2": "X-Ray",
+        "3": "Easter Chick",
+        "4": "Sand trap"
       },
       "effect_selection": "Pick an effect:"
     },
+    "from_another_room": "From another room",
+    "from_value": "From value",
     "groupselection": "Choose group:",
     "grouptype": {
       "0": "Current group",
@@ -268,6 +282,33 @@
       "minutes": "Length: {{minutes}} minutes"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "Base XP:",
+      "increase_factor": "Increase factor (%):",
+      "interpolation_placeholder": "5",
+      "max_level": "Max level:",
+      "mode": {
+        "0": "Manual input",
+        "1": "Linear",
+        "2": "Exponential",
+        "title": "Progression mode:"
+      },
+      "preview": {
+        "entry": "Level: {{lvl}} - XP: {{xp}}",
+        "title": "Level/xp preview:"
+      },
+      "step_size": "Step size:",
+      "subvariable": {
+        "0": "Current Level:",
+        "1": "Current XP:",
+        "2": "Level progress:",
+        "3": "Level progress %:",
+        "4": "Total XP required:",
+        "5": "XP remaining:",
+        "6": "Is maxed:",
+        "7": "Max level:"
+      }
+    },
     "message": "Message:",
     "movefurni": {
       "0": "No movement",
@@ -312,6 +353,10 @@
     },
     "pickamount": "Pick {{picks}} effects",
     "picktriggerer": "Pick the triggerer's name:",
+    "placeholder_selection": {
+      "tooltip": "Choose a placeholder",
+      "title": "Choose placeholder:"
+    },
     "placement": {
       "1": "1st",
       "2": "2nd",
@@ -374,6 +419,10 @@
       "title": "Allow triggering if:"
     },
     "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
+    "room_selection": {
+      "tooltip": "Choose a room",
+      "title": "Choose room:"
+    },
     "rotatefurni": {
       "0": "No rotation",
       "1": "Rotate clockwise",
@@ -464,6 +513,8 @@
       },
       "users": {
         "0": "Use the triggering user",
+        "10": "The reached user",
+        "11": "The clicked user",
         "100": "Use the bot specified by name",
         "101": "Use the user specified by name",
         "200": "Use users from Selector",
@@ -585,6 +636,33 @@
       },
       "weekday_selection": "Day of the week:",
       "year_selection": "Year:"
+    },
+    "time_util": {
+      "advanced_info": "The underneath subvariables start counting upwards since 1970. You can use them to compare the amount of time units between 2 timestamps.",
+      "mode": {
+        "0": "Value",
+        "1": "Creation time",
+        "2": "Last update time"
+      },
+      "subvariable": {
+        "1": "Milliseconds",
+        "2": "Second",
+        "3": "Minute",
+        "4": "Hour",
+        "5": "Day of week",
+        "6": "Day of month",
+        "7": "Day of year",
+        "8": "Week of year",
+        "9": "Month of year",
+        "10": "Year",
+        "20": "Milliseconds",
+        "21": "Second",
+        "22": "Minute",
+        "23": "Hour",
+        "24": "Day",
+        "25": "Week",
+        "26": "Month"
+      }
     },
     "toggletype": {
       "0": "Toggle to the next state",
@@ -790,6 +868,20 @@
     "group": "Select group",
     "handitem": "Select the hand item",
     "sign": "Select sign"
+  },
+  "variable_picker": {
+    "empty": "Nothing to display",
+    "search": "Search a variable",
+    "tab": {
+      "all": "All variables",
+      "dynamic": "Smart variables",
+      "internal": "Internal variables",
+      "recent": "Recent variables",
+      "search": "Search",
+      "user_created": "User created variables"
+    },
+    "tooltip_disabled": "Can not be selected in this context",
+    "tooltip_not_selectable": "Can not be selected, but some nested variables can"
   },
   "variables": {
     "availability_change": {

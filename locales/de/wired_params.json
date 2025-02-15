@@ -40,9 +40,12 @@
       "name_length": "Die Placeholder-Länge muss zwischen 1 und 40 Zeichen betragen.",
       "name_syntax": "Placeholder können nur Buchstaben, Zahlen oder \"_\" Zeichen beinhalten."
     },
+    "reference_not_found": "Referenz nicht gefunden",
     "require_antenna_furni": "Nur Antennen-Möbel können ausgewählt werden.",
     "require_click_tiles": "Kann nur unsichtbare Klick-Möbel auswählen.",
     "require_counter_furni": "Nur Countdown-Möbel können ausgewählt werden.",
+    "require_room_linker": "Es können nur Wired-Raumlinker ausgewählt werden!",
+    "staff_or_owner_only": "Diese Änderung kann nur von Habbo Staff oder dem Raumbesitzer gemacht werden",
     "title": "Update fehlgeschlagen",
     "too_much_text": "Wired-Texte können höchstens {{limit}} Zeichen beinhalten.",
     "username_length": "Ein Username kann nicht mehr als {{max_username_length}} Zeichen haben!",
@@ -118,23 +121,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Winken",
+      "1": "Kuss hauchen",
+      "2": "Lachen",
+      "3": "Daumen hoch",
       "4": "Aufwachen",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Schlafen",
+      "6": "Setzen",
+      "7": "Aufstehen",
       "8": "Liegen",
       "9": "Schwimmen",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Schild",
+      "11": "Tanzen",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Tanzen",
+        "2": "Hab Hop",
+        "3": "Duck Funk",
+        "4": "Pogo Mogo"
       },
       "sign": {
         "0": "0",
@@ -191,6 +194,11 @@
     "chatcontains": "Enthält Schlüsselwort",
     "chattriggertype": "Typ auswählen:",
     "choose_type": "Typ auswählen:",
+    "click_user": {
+      "block_menu_open": "Öffne nicht das Avatarmenü",
+      "do_not_rotate": "Nicht drehen",
+      "settings": "Wenn ein User geklickt wird:"
+    },
     "clock_control": {
       "0": "Starten",
       "1": "Stoppen",
@@ -219,6 +227,10 @@
       "state": "Aktueller Möbel Zustand"
     },
     "conditions": "Wähle die Möbel Kriterien, die gegeben sein müssen:",
+    "create_subvariables": {
+      "advanced": "Fortgeschrittene Subvariablen:",
+      "title": "Subvariablen erstellen:"
+    },
     "dance_filter": "Nach Tanz filtern",
     "dance_selection": "Tanz:",
     "delay": "Effekt tritt nach {{seconds}} Sekunden ein",
@@ -250,14 +262,16 @@
     "freeze": {
       "cancel_on_teleport": "Auftauen durch Teleport",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Eingefroren",
+        "2": "Röntgen",
+        "3": "Osterküken",
+        "4": "Sandfalle"
       },
       "effect_selection": "Wähle einen Effekt:"
     },
+    "from_another_room": "Von einem anderen Raum",
+    "from_value": "Von Wert",
     "groupselection": "Gruppe auswählen:",
     "grouptype": {
       "0": "Aktuelle Gruppe",
@@ -268,6 +282,32 @@
       "minutes": "Dauer: {{minutes}} Minuten"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "Basis XP",
+      "increase_factor": "Wachstumsfaktor (%):",
+      "max_level": "Max.Level:",
+      "mode": {
+        "0": "Manueller Input",
+        "1": "Linear",
+        "2": "Exponentiell",
+        "title": "Fortschrittsmodus:"
+      },
+      "preview": {
+        "entry": "Level: {{lvl}} - XP: {{xp}}",
+        "title": "Level/XP Vorschau:"
+      },
+      "step_size": "Schrittgrösse:",
+      "subvariable": {
+        "0": "Aktuelles Level:",
+        "1": "Aktuelle XP:",
+        "2": "Levelfortschritt:",
+        "3": "Levelfortschritt %:",
+        "4": "XP erfordert insgesamt:",
+        "5": "Übrige XP:",
+        "6": "Ist ausgeschöpft:",
+        "7": "Max.Level:"
+      }
+    },
     "message": "Nachricht:",
     "movefurni": {
       "0": "Keine Bewegung",
@@ -312,6 +352,10 @@
     },
     "pickamount": "Wähle {{picks}} Effekte",
     "picktriggerer": "Namen des auslösenden Habbo auswählen:",
+    "placeholder_selection": {
+      "tooltip": "Placeholder auswählen",
+      "title": "Placeholder auswählen:"
+    },
     "placement": {
       "1": "1.",
       "2": "2.",
@@ -374,6 +418,10 @@
       "title": "Auslöser funktionieren nur wenn:"
     },
     "requiredformationsize": "Mindestens {{furnis}} Möbel passen zu Zustand/Ort",
+    "room_selection": {
+      "tooltip": "Wähle einen Raum aus",
+      "title": "Raum auswählen:"
+    },
     "rotatefurni": {
       "0": "Keine Drehung",
       "1": "Im Uhrzeigersinn drehen",
@@ -464,6 +512,8 @@
       },
       "users": {
         "0": "Den auslösenden User nehmen",
+        "10": "Der User, der damit erreicht wird",
+        "11": "Der User, auf den geklickt wird",
         "100": "Den durch Namen bestimmten Bot verwenden",
         "101": "Den durch Namen bestimmten User verwenden",
         "200": "User vom Selektor nehmen",
@@ -585,6 +635,33 @@
       },
       "weekday_selection": "Wochentag:",
       "year_selection": "Jahr:"
+    },
+    "time_util": {
+      "advanced_info": "Die unterliegenden Subvariablen zählen seit 1970 aufwärts. Sie können verwendet werden, um die Anzahl der Zeiteinheiten zwischen 2 Timestamps zu vergleichen.",
+      "mode": {
+        "0": "Wert",
+        "1": "Erstellungszeit",
+        "2": "Zuletzt aktualisiert"
+      },
+      "subvariable": {
+        "1": "Millisekunden",
+        "2": "Sekunde",
+        "3": "Minute",
+        "4": "Stunde",
+        "5": "Wochentag",
+        "6": "Tag im Monat",
+        "7": "Tag im Jahr",
+        "8": "Woche im Jahr",
+        "9": "Monat im Jahr",
+        "10": "Jahr",
+        "20": "Millisekunden",
+        "21": "Sekunde",
+        "22": "Minute",
+        "23": "Stunde",
+        "24": "Tag",
+        "25": "Woche",
+        "26": "Monat"
+      }
     },
     "toggletype": {
       "0": "In den nächsten Zustand schalten",
@@ -787,6 +864,20 @@
     "group": "Gruppe auswählen",
     "handitem": "Wähle ein Handitem",
     "sign": "Schild auswählen"
+  },
+  "variable_picker": {
+    "empty": "Nichts anzuzeigen",
+    "search": "Eine Variable suchen",
+    "tab": {
+      "all": "Alle Variablen",
+      "dynamic": "Smart Variablen",
+      "internal": "Interne Variablen",
+      "recent": "Neue Variablen",
+      "search": "Suchen",
+      "user_created": "Vom User erstellte Variablen"
+    },
+    "tooltip_disabled": "Kann in diesem Kontext nicht ausgewählt werden",
+    "tooltip_not_selectable": "Kann nicht ausgewählt werden, aber manche verschachtelte Variablen können"
   },
   "variables": {
     "availability_change": {

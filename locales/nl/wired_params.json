@@ -40,9 +40,12 @@
       "name_length": "De lengte van de placeholder moet tussen de 1 en 40 karakters zijn.",
       "name_syntax": "Placeholders mogen alleen bestaan uit letters, nummer of \"_\" karakters."
     },
+    "reference_not_found": "Er is geen referentie gevonden",
     "require_antenna_furni": "Je kan enkel antenna meubi selecteren.",
     "require_click_tiles": "Je kan enkel onzichtbare kliktegel meubi selecteren.",
     "require_counter_furni": "Je kan enkel timer meubi selecteren.",
+    "require_room_linker": "Kan alleen Wired kamerlinkers selecteren!",
+    "staff_or_owner_only": "Deze wijziging kan alleen worden aangebracht door Habbo Staff of de kamereigenaar",
     "title": "Update mislukt",
     "too_much_text": "Wired teksten mogen maximaal {{limit}} tekens bevatten.",
     "username_length": "Een username kan niet langer zijn dan {{max_username_length}} tekens!",
@@ -118,23 +121,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Zwaai",
+      "1": "Luchtkus",
+      "2": "Lach",
+      "3": "Duim omhoog",
       "4": "Wakker",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "In rust",
+      "6": "Zit",
+      "7": "Sta op",
       "8": "Liggend",
       "9": "Zwemmend",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Inschrijven",
+      "11": "Dans",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Hab-Hop",
+        "2": "Pogo Mogo",
+        "3": "Duck Funk",
+        "4": "The Rollie"
       },
       "sign": {
         "0": "0",
@@ -191,6 +194,11 @@
     "chatcontains": "Bevat sleutelwoord",
     "chattriggertype": "Kies type:",
     "choose_type": "Selecteer type:",
+    "click_user": {
+      "block_menu_open": "Open het avatarmenu niet",
+      "do_not_rotate": "Draai de speler niet",
+      "settings": "Wanneer een speler aangeklikt wordt:"
+    },
     "clock_control": {
       "0": "Start",
       "1": "Stop",
@@ -219,6 +227,10 @@
       "state": "Huidige Meubi staat"
     },
     "conditions": "Instellingen die worden gebruikt:",
+    "create_subvariables": {
+      "advanced": "Geavanceerde subvariabelen:",
+      "title": "Creëert subvariabelen:"
+    },
     "dance_filter": "Filter op dans",
     "dance_selection": "Dans:",
     "delay": "Start Reactie na {{seconds}} seconden",
@@ -250,14 +262,16 @@
     "freeze": {
       "cancel_on_teleport": "Unfreeze tijdens het teleporteren",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Bevroren.",
+        "2": "X-Ray",
+        "3": "Pasen Kuikens",
+        "4": "Zandvanger"
       },
       "effect_selection": "Kies een effect:"
     },
+    "from_another_room": "Vanuit een andere kamer",
+    "from_value": "Vanuit waarde",
     "groupselection": "Kies een groep:",
     "grouptype": {
       "0": "Huidige groep",
@@ -268,6 +282,32 @@
       "minutes": "Duur: {{minutes}} minuten"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "Basis XP:",
+      "increase_factor": "Verhogingsfactor (%):",
+      "max_level": "Max Niveau:",
+      "mode": {
+        "0": "Handmatige input",
+        "1": "Lineair",
+        "2": "Exponentieel",
+        "title": "Progressie modus:"
+      },
+      "preview": {
+        "entry": "Niveau: {{lvl}} - XP: {{xp}}",
+        "title": "Voorbeeld van Niveau/xp:"
+      },
+      "step_size": "Stap grootte:",
+      "subvariable": {
+        "0": "Huidig Niveau:",
+        "1": "Huidige XP:",
+        "2": "Level progressie:",
+        "3": "Level progressie %:",
+        "4": "Totaal vereiste XP:",
+        "5": "Resterende XP:",
+        "6": "Is maximaal:",
+        "7": "Maximaal Niveau:"
+      }
+    },
     "message": "Wat is je bericht:",
     "movefurni": {
       "0": "Niet verplaatsen",
@@ -312,6 +352,10 @@
     },
     "pickamount": "Kies {{picks}} effecten",
     "picktriggerer": "Selecteer de trigger's naam:",
+    "placeholder_selection": {
+      "tooltip": "Kies een",
+      "title": "Kies een aanduiding:"
+    },
     "placement": {
       "1": "1ste",
       "2": "2de",
@@ -374,6 +418,10 @@
       "title": "Reacties werken alleen als..."
     },
     "requiredformationsize": "Minstens {{furnis}} Meubis hebben een overeenkomende staat/locatie",
+    "room_selection": {
+      "tooltip": "Kies een kamer",
+      "title": "Selecteer kamer:"
+    },
     "rotatefurni": {
       "0": "Niet draaien",
       "1": "Draai met linksom",
@@ -464,6 +512,8 @@
       },
       "users": {
         "0": "Gebruik de getriggerde speler",
+        "10": "De bereikte gebruiker",
+        "11": "De speler waarop is geklikt",
         "100": "Gebruik de bot die bij naam is opgegeven",
         "101": "Gebruik de speler die bij naam is opgegeven",
         "200": "Gebruik spelers van de Selector",
@@ -585,6 +635,33 @@
       },
       "weekday_selection": "Dag van de week:",
       "year_selection": "Jaar:"
+    },
+    "time_util": {
+      "advanced_info": "De onderstaande subvariabelen beginnen vanaf 1970 te tellen. Je kunt ze gebruiken om het aantal tijdseenheden tussen 2 tijdlijnen te vergelijken.",
+      "mode": {
+        "0": "Waarde",
+        "1": "Aanmaak moment",
+        "2": "Laatste update moment"
+      },
+      "subvariable": {
+        "1": "Milliseconden",
+        "2": "Seconde",
+        "3": "Minuut",
+        "4": "Uur",
+        "5": "Dag van de week",
+        "6": "Dag van de maand",
+        "7": "Dag van het jaar",
+        "8": "Week van het jaar",
+        "9": "Maand van het jaar",
+        "10": "Jaar",
+        "20": "Milliseconden",
+        "21": "Seconde",
+        "22": "Minuut",
+        "23": "Uur",
+        "24": "Dag",
+        "25": "Week",
+        "26": "Maand"
+      }
     },
     "toggletype": {
       "0": "Schakel naar de volgende staat",
@@ -787,6 +864,20 @@
     "group": "Kies een groep",
     "handitem": "Selecteer hand item",
     "sign": "Selecteer bord"
+  },
+  "variable_picker": {
+    "empty": "Niets om weer te geven",
+    "search": "Zoek een variabele",
+    "tab": {
+      "all": "Alle variabelen",
+      "dynamic": "Slimme variabelen",
+      "internal": "Interne variabelen",
+      "recent": "Recente variabelen",
+      "search": "Zoek",
+      "user_created": "Gebruiker heeft variabelen gemaakt"
+    },
+    "tooltip_disabled": "Kan niet geselecteerd worden in deze context",
+    "tooltip_not_selectable": "Kan niet worden geselecteerd, maar sommige geneste variabelen wel"
   },
   "variables": {
     "availability_change": {

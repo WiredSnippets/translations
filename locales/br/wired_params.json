@@ -41,9 +41,12 @@
       "name_length": "O tamanho do espaço deve ter entre 1 e 40 caracteres.",
       "name_syntax": "O espaço deve conter apenas letras, números ou caracteres \"_\"."
     },
+    "reference_not_found": "A referência não foi encontrada",
     "require_antenna_furni": "Você só pode selecionar mobis do tipo Antena Wired!",
     "require_click_tiles": "Você só pode selecionar pisos de clique invisível.",
     "require_counter_furni": "Você só pode selecionar mobis do tipo Relógio e Cronômetro!",
+    "require_room_linker": "Só pode selecionar conectores de quarto wired!",
+    "staff_or_owner_only": "Essa modificação só pode ser feita pela Habbo Staff ou pelo proprietário do quarto",
     "title": "Falha ao atualizar",
     "too_much_text": "Os textos wired podem ter no máximo {{limit}} caracteres.",
     "username_length": "O nome do usuário não pode ultrapassar {{max_username_length}} caracteres!",
@@ -119,23 +122,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Acenar",
+      "1": "Mandar um beijo",
+      "2": "Rir",
+      "3": "Curti!",
       "4": "Desperto",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Inativo",
+      "6": "Sentar",
+      "7": "Levantar",
       "8": "Deitar",
       "9": "Nadar",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Assine",
+      "11": "Dançar",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Hap-Hop",
+        "2": "Pogo Mogo",
+        "3": "Duck Funk",
+        "4": "Rollie"
       },
       "sign": {
         "0": "0",
@@ -192,6 +195,11 @@
     "chatcontains": "Contém palavra-chave",
     "chattriggertype": "Escolha o tipo:",
     "choose_type": "Escolha o tipo:",
+    "click_user": {
+      "block_menu_open": "Não abrir o menu de avatar",
+      "do_not_rotate": "Não gire",
+      "settings": "Quando um usuário é clicado:"
+    },
     "clock_control": {
       "0": "Começar",
       "1": "Parar",
@@ -220,6 +228,10 @@
       "state": "Atual estado do Mobi"
     },
     "conditions": "Selecione um critério de Mobi que precisa ser marcado:",
+    "create_subvariables": {
+      "advanced": "Subvariáveis avançadas:",
+      "title": "Criar subvariáveis:"
+    },
     "dance_filter": "Filtrar por Dança",
     "dance_selection": "Dança:",
     "delay": "Efeito de atraso de {{seconds}} segundos",
@@ -251,14 +263,16 @@
     "freeze": {
       "cancel_on_teleport": "Descongelar ao teletransportar",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Congelado",
+        "2": "Raio-X",
+        "3": "Passarinhos",
+        "4": "Armadilha"
       },
       "effect_selection": "Escolha um efeito:"
     },
+    "from_another_room": "De outro quarto",
+    "from_value": "Do valor",
     "groupselection": "Escolha o grupo:",
     "grouptype": {
       "0": "Grupo atual",
@@ -269,6 +283,32 @@
       "minutes": "Duração: {{minutes}} minutos"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "XP base:",
+      "increase_factor": "Fator de aumento (%):",
+      "max_level": "Nível máximo:",
+      "mode": {
+        "0": "Entrada manual",
+        "1": "Linear",
+        "2": "Exponencial",
+        "title": "Modo de Progressão:"
+      },
+      "preview": {
+        "entry": "Nível: {{lvl}} - XP: {{xp}}",
+        "title": "Visualização de nível/exp:"
+      },
+      "step_size": "Tamanho da etapa:",
+      "subvariable": {
+        "0": "Nível Atual:",
+        "1": "XP Atual:",
+        "2": "Progresso de nível:",
+        "3": "Progresso de nível %:",
+        "4": "Total de XP necessário:",
+        "5": "XP restante:",
+        "6": "Está no máximo:",
+        "7": "Nível máximo:"
+      }
+    },
     "message": "Mensagem:",
     "movefurni": {
       "0": "Nenhum movimento",
@@ -313,6 +353,10 @@
     },
     "pickamount": "Selecione {{picks}} efeitos",
     "picktriggerer": "Selecione o nome do ativador:",
+    "placeholder_selection": {
+      "tooltip": "Escolha o espaço reservado:",
+      "title": "Escolha o espaço reservado:"
+    },
     "placement": {
       "1": "1º",
       "2": "2º",
@@ -375,6 +419,10 @@
       "title": "Permite ativação se:"
     },
     "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
+    "room_selection": {
+      "tooltip": "Escolha o quarto:",
+      "title": "Escolha o quarto:"
+    },
     "rotatefurni": {
       "0": "Nenhuma rotação",
       "1": "Rotacionar no sentido horário",
@@ -465,6 +513,8 @@
       },
       "users": {
         "0": "Use o usuário acionador",
+        "10": "O usuário alcançado",
+        "11": "O usuário clicado",
         "100": "Use o bot especificado pelo nome",
         "101": "Use o Habbo especificado pelo nome",
         "200": "Usar usuários do seletor",
@@ -586,6 +636,33 @@
       },
       "weekday_selection": "Dia da semana:",
       "year_selection": "Ano:"
+    },
+    "time_util": {
+      "advanced_info": "As subvariáveis abaixo começam a contar para cima desde 1970. Você pode usá-las para comparar a quantidade de unidades de tempo entre 2 marcas de tempo.",
+      "mode": {
+        "0": "Valor",
+        "1": "Data de criação",
+        "2": "Data da última modificação"
+      },
+      "subvariable": {
+        "1": "Milissegundos",
+        "2": "Segundo",
+        "3": "Minuto",
+        "4": "Hora",
+        "5": "Dia da semana",
+        "6": "Dia do mês",
+        "7": "Dia do ano",
+        "8": "Semana do ano",
+        "9": "Mês do ano",
+        "10": "Ano",
+        "20": "Milissegundos",
+        "21": "Segundo",
+        "22": "Minuto",
+        "23": "Hora",
+        "24": "Dia",
+        "25": "Semana",
+        "26": "Mês"
+      }
     },
     "toggletype": {
       "0": "Alternar para o próximo estado",
@@ -788,6 +865,20 @@
     "group": "Selecione o grupo",
     "handitem": "Selecione o item de mão",
     "sign": "Selecionar sinal"
+  },
+  "variable_picker": {
+    "empty": "Nada para exibir",
+    "search": "Buscar uma variável",
+    "tab": {
+      "all": "Todas as variáveis",
+      "dynamic": "Variáveis inteligentes",
+      "internal": "Variáveis internas",
+      "recent": "Variáveis recentes",
+      "search": "Buscar",
+      "user_created": "Variáveis criadas pelo usuário"
+    },
+    "tooltip_disabled": "Não pode ser selecionado neste contexto.",
+    "tooltip_not_selectable": "Não pode ser selecionado, mas algumas variáveis aninhadas podem."
   },
   "variables": {
     "availability_change": {

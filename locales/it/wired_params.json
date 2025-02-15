@@ -40,9 +40,12 @@
       "name_length": "La lunghezza del segnaposto deve essere compresa tra 1 e 40 caratteri.",
       "name_syntax": "Il segnaposto deve contenere solo lettere, numeri o caratteri \"_\"."
     },
+    "reference_not_found": "Il riferimento non è stato trovato",
     "require_antenna_furni": "Puoi selezionare solo i furni antenna.",
     "require_click_tiles": "Puoi selezionare solo furni con click invisibili.",
     "require_counter_furni": "Puoi selezionare solo i furni timer.",
+    "require_room_linker": "Può solo selezionare wired Collegatori di Stanze!",
+    "staff_or_owner_only": "Questa modifica può essere effettuata solo dallo Staff di Habbo o dal proprietario della Stanza.",
     "title": "Aggiornamento fallito",
     "too_much_text": "I testi wired possono contenere al massimo {{limit}} caratteri.",
     "username_length": "Un nome utente non può essere più lungo di {{max_username_length}} caratteri!",
@@ -118,23 +121,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Saluta",
+      "1": "Manda Bacio",
+      "2": "Ridi",
+      "3": "Pollice in su",
       "4": "Sveglio",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Rilassati",
+      "6": "Siediti",
+      "7": "Alzati",
       "8": "Sdraiati",
       "9": "Nuota",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Segnali",
+      "11": "Balla",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Hab-Hop",
+        "2": "The Rollie",
+        "3": "Duck Funk",
+        "4": "Pogo Mogo"
       },
       "sign": {
         "0": "0",
@@ -191,6 +194,11 @@
     "chatcontains": "Contiene parola chiave",
     "chattriggertype": "Scegli tipo:",
     "choose_type": "Scegli tipo:",
+    "click_user": {
+      "block_menu_open": "Non aprire il menu avatar",
+      "do_not_rotate": "Non ruotare",
+      "settings": "Quando si fa clic su un utente:"
+    },
     "clock_control": {
       "0": "Start",
       "1": "Stop",
@@ -219,6 +227,10 @@
       "state": "Stato attuale"
     },
     "conditions": "Seleziona i criteri da applicare:",
+    "create_subvariables": {
+      "advanced": "Sottovariabili Avanzate:",
+      "title": "Crea sottovariabili:"
+    },
     "dance_filter": "Filtra in base al ballo",
     "dance_selection": "Ballo:",
     "delay": "Ritarda Effetto di {{seconds}} secondi",
@@ -250,14 +262,16 @@
     "freeze": {
       "cancel_on_teleport": "Sblocca quando teletrasporti",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Congelato",
+        "2": "Raggi X",
+        "3": "Pulcini di Pasqua",
+        "4": "Trappola di Sabbia"
       },
       "effect_selection": "Scegli un effetto:"
     },
+    "from_another_room": "Da un'altra stanza",
+    "from_value": "Dal valore",
     "groupselection": "Scegli gruppo:",
     "grouptype": {
       "0": "Gruppo attuale",
@@ -268,6 +282,32 @@
       "minutes": "Lunghezza: {{minutes}} minuti"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "XP di base:",
+      "increase_factor": "Fattore d'incremento (%):",
+      "max_level": "Livello massimo:",
+      "mode": {
+        "0": "Inserimento manuale",
+        "1": "Lineare",
+        "2": "Esponenziale",
+        "title": "Modalità di progressione:"
+      },
+      "preview": {
+        "entry": "Livello: {{lvl}} - XP: {{xp}}",
+        "title": "Anteprima del livello/xp:"
+      },
+      "step_size": "Dimensione del passo:",
+      "subvariable": {
+        "0": "Livello Attuale:",
+        "1": "XP Attuale:",
+        "2": "Progressione del livello:",
+        "3": "Progressione del livello %:",
+        "4": "Totale XP richiesto:",
+        "5": "XP rimanenti:",
+        "6": "È al massimo:",
+        "7": "Livello massimo:"
+      }
+    },
     "message": "Messaggio:",
     "movefurni": {
       "0": "Nessun movimento",
@@ -312,6 +352,10 @@
     },
     "pickamount": "Seleziona {{picks}} effetti",
     "picktriggerer": "Seleziona il nome di chi lo innesca:",
+    "placeholder_selection": {
+      "tooltip": "Scegli un placeholder",
+      "title": "Scegli placeholder:"
+    },
     "placement": {
       "1": "1.",
       "2": "2.",
@@ -374,6 +418,10 @@
       "title": "Gli inneschi funzionano solo se..."
     },
     "requiredformationsize": "Almeno {{furnis}} Furni corrispondono allo stato/posizione",
+    "room_selection": {
+      "tooltip": "Scegli una Stanza",
+      "title": "Scegli Stanza:"
+    },
     "rotatefurni": {
       "0": "Nessuna rotazione",
       "1": "Ruota in senso orario",
@@ -464,6 +512,8 @@
       },
       "users": {
         "0": "Usa l'utente che innesca",
+        "10": "L'utente raggiunto",
+        "11": "L'utente cliccato",
         "100": "Usa il bot specificato dal nome",
         "101": "Usa l'utente specificato dal nome",
         "200": "Usa utenti da Selettore",
@@ -585,6 +635,33 @@
       },
       "weekday_selection": "Giorno della settimana:",
       "year_selection": "Anno:"
+    },
+    "time_util": {
+      "advanced_info": "Le sottovariabili iniziano a contare verso l'alto dal 1970. Puoi usarli per confrontare la quantità di unità di tempo tra due timestamp.",
+      "mode": {
+        "0": "Valore",
+        "1": "Tempo di creazione",
+        "2": "Tempo di aggiornamento"
+      },
+      "subvariable": {
+        "1": "Millisecondi",
+        "2": "Secondo",
+        "3": "Minuto",
+        "4": "Ora",
+        "5": "Giorno della settimana",
+        "6": "Giorno del mese",
+        "7": "Giorno dell'anno",
+        "8": "Settimana dell'anno",
+        "9": "Mese dell'anno",
+        "10": "Anno",
+        "20": "Millisecondi",
+        "21": "Secondo",
+        "22": "Minuto",
+        "23": "Ora",
+        "24": "Giorno",
+        "25": "Settimana",
+        "26": "Mese"
+      }
     },
     "toggletype": {
       "0": "Cambia allo stato successivo",
@@ -787,6 +864,20 @@
     "group": "Seleziona gruppo",
     "handitem": "Seleziona oggetto",
     "sign": "Seleziona cartello"
+  },
+  "variable_picker": {
+    "empty": "Nulla da visualizzare",
+    "search": "Cerca una variabile",
+    "tab": {
+      "all": "Tutte le variabili",
+      "dynamic": "Variabili intelligenti",
+      "internal": "Variabili interne",
+      "recent": "Variabili recenti",
+      "search": "Cerca",
+      "user_created": "Variabili create dall'utente"
+    },
+    "tooltip_disabled": "Non può essere selezionato in questo contesto",
+    "tooltip_not_selectable": "Non può essere selezionato, ma alcune variabili annesse possono essere selezionate"
   },
   "variables": {
     "availability_change": {

@@ -40,9 +40,12 @@
       "name_length": "Paikan tulee olla 1-40 merkkiä pitkä.",
       "name_syntax": "Paikka saa sisältää vain kirjaimia, numeroita ja \"_\"-merkkejä."
     },
+    "reference_not_found": "Viitettä ei löytynyt",
     "require_antenna_furni": "Voit valita vain Wired-antenneja.",
     "require_click_tiles": "Voit valita vain näkymättömiä klikkaustavaroita.",
     "require_counter_furni": "Voit valita vain ajastintavaroita.",
+    "require_room_linker": "Voit valita vain huoneiden Wired-linkittäjiä!",
+    "staff_or_owner_only": "Muutoksen voi tehdä vain Habbo-staffi tai huoneen omistaja.",
     "title": "Päivitys epäonnistui",
     "too_much_text": "Wiredien tekstien maksimipituus on {{limit}} merkkiä.",
     "username_length": "Hahmon nimi ei voi olla pidempi kuin {{max_username_length}} merkkiä!",
@@ -118,23 +121,23 @@
   },
   "params": {
     "action": {
-      "0": "${widget.memenu.wave}",
-      "1": "${widget.memenu.blow}",
-      "2": "${widget.memenu.laugh}",
-      "3": "${widget.memenu.thumb}",
+      "0": "Vilkuta",
+      "1": "Lentosuukko",
+      "2": "Naura",
+      "3": "Peukku",
       "4": "Hereillä",
-      "5": "${widget.memenu.idle}",
-      "6": "${widget.memenu.sit}",
-      "7": "${widget.memenu.stand}",
+      "5": "Idlaa",
+      "6": "Istu",
+      "7": "Nouse ylös",
       "8": "Makaa",
       "9": "Ui",
-      "10": "${widget.memenu.sign}",
-      "11": "${widget.memenu.dance}",
+      "10": "Kyltit",
+      "11": "Valitse tanssityyli",
       "dance": {
-        "1": "${widget.memenu.dance1}",
-        "2": "${widget.memenu.dance2}",
-        "3": "${widget.memenu.dance3}",
-        "4": "${widget.memenu.dance4}"
+        "1": "Hab-Hop",
+        "2": "Rollie",
+        "3": "Duck Funk",
+        "4": "Pogo Mogo"
       },
       "sign": {
         "0": "0",
@@ -160,9 +163,9 @@
     "action_selection": "Toimenpide:",
     "allmatch": "Täsmää kaikkeen tekstiin",
     "allowafter2": "Aktivoi kun on kulunut:",
-    "allowafter": "Salli:  {{seconds}} sekunnin jälkeen",
+    "allowafter": "Yli {{seconds}} sekuntia kulunut",
     "allowbefore2": "Aktivoi ennen kuin on kulunut:",
-    "allowbefore": "Salli ennen: {{seconds}} sekuntia",
+    "allowbefore": "Alle {{seconds}} sekuntia kulunut",
     "anyavatar": "Kuka tahansa",
     "area_selection": {
       "clear": "Tyhjennä",
@@ -191,6 +194,11 @@
     "chatcontains": "Sisältää avainsanan",
     "chattriggertype": "Valitse tyyppi:",
     "choose_type": "Valitse tyyppi:",
+    "click_user": {
+      "block_menu_open": "Älä avaa hahmon valikkoa",
+      "do_not_rotate": "Älä käänny",
+      "settings": "Kun hahmoa klikataan:"
+    },
     "clock_control": {
       "0": "Aloita",
       "1": "Pysäytä",
@@ -200,9 +208,9 @@
       "title": "Valitse seuraavista vaihtoehdoista"
     },
     "clock_minutes": "{{minutes}} minuuttia",
-    "clock_minutes_elapsed": "{{minutes}} minuuttia kulunut",
+    "clock_minutes_elapsed": "{{minutes}} minuuttia",
     "clock_seconds": "{{seconds}} sekuntia",
-    "clock_seconds_elapsed": "{{seconds}} sekuntia kulunut",
+    "clock_seconds_elapsed": "{{seconds}} sekuntia",
     "comparison": {
       "0": "Alempi kuin",
       "1": "Yhtä kuin",
@@ -210,7 +218,7 @@
     },
     "comparison_selection": "Valitse tyyppi:",
     "cond_eval": {
-      "note": "Voit valita WIRED-ehdot, joihin tämä lisäosa pätee. Jos et valitse mitään ehtoa, sitä sovelletaan kaikkiin käytettävissä oleviin ehtoihin."
+      "note": "Voit valita mitkä tahansa Wired-ehdot tästä huoneesta, jotka tämän lisän tulisi ottaa huomioon. Jos et valitse mitään, se käyttää samassa Wired-pinossa olevia ehtoja."
     },
     "condition": {
       "altitude": "Nykyinen korkeus",
@@ -219,6 +227,10 @@
       "state": "Nykyinen tavaran tila"
     },
     "conditions": "Ehdot, jotka täytyy täyttyä:",
+    "create_subvariables": {
+      "advanced": "Edistyneet alimuuttujat:",
+      "title": "Luo alimuuttujia:"
+    },
     "dance_filter": "Suodata tanssityylin mukaan",
     "dance_selection": "Tanssityyli:",
     "delay": "Viivästytä toimintoa {{seconds}} sekuntia",
@@ -250,14 +262,16 @@
     "freeze": {
       "cancel_on_teleport": "Mahdollista liikkuminen teleportatessa",
       "effect": {
-        "0": "${fx_218}",
-        "1": "${fx_12}",
-        "2": "${fx_11}",
-        "3": "${fx_53}",
-        "4": "${fx_163}"
+        "0": "Wired Freeze",
+        "1": "Jäässä",
+        "2": "Röntgen",
+        "3": "Tiputaika",
+        "4": "Hiekka-ansa"
       },
       "effect_selection": "Valitse efekti:"
     },
+    "from_another_room": "Toisesta huoneesta",
+    "from_value": "Arvosta",
     "groupselection": "Valitse ryhmä:",
     "grouptype": {
       "0": "Nykyinen ryhmä:",
@@ -268,6 +282,32 @@
       "minutes": "Kesto: {{minuuttia}} minuuttia"
     },
     "level_selection": "Set level: {{level}}",
+    "levelup": {
+      "first_level_xp": "Aloitus-XP:",
+      "increase_factor": "Kasvukerroin (%):",
+      "max_level": "Maksimitaso:",
+      "mode": {
+        "0": "Manuaalinen syöttö",
+        "1": "Lineaarinen",
+        "2": "Eksponentiaalinen",
+        "title": "Etenemistila:"
+      },
+      "preview": {
+        "entry": "Taso: {{lvl}} - XP: {{xp}}",
+        "title": "Tason/XP:n esikatselu:"
+      },
+      "step_size": "Tason XP-määrä:",
+      "subvariable": {
+        "0": "Nykyinen taso:",
+        "1": "Nykyinen XP:",
+        "2": "Tasoeteneminen:",
+        "3": "Tasoeteneminen (%):",
+        "4": "Vaadittu kokonais-XP:",
+        "5": "XP:tä jäljellä:",
+        "6": "Maksimoitu:",
+        "7": "Maksimitaso:"
+      }
+    },
     "message": "Viesti:",
     "movefurni": {
       "0": "Älä siirrä",
@@ -312,6 +352,10 @@
     },
     "pickamount": "Toimintojen määrä: {{picks}}",
     "picktriggerer": "Valitse laukaisijan nimi:",
+    "placeholder_selection": {
+      "tooltip": "Valitse paikka",
+      "title": "Valitse paikka:"
+    },
     "placement": {
       "1": "1.",
       "2": "2.",
@@ -374,6 +418,10 @@
       "title": "Laukaisimet toimivat vain, jos..."
     },
     "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
+    "room_selection": {
+      "tooltip": "Valitse huone",
+      "title": "Valitse huone:"
+    },
     "rotatefurni": {
       "0": "Älä käännä",
       "1": "Käännä vastapäivään",
@@ -464,6 +512,8 @@
       },
       "users": {
         "0": "Käytä laukaisevaa hahmoa",
+        "10": "Saavutettu hahmo",
+        "11": "Klikattu hahmo",
         "100": "Käytä bottia nimen perusteella",
         "101": "Käytä hahmoa nimen perusteella",
         "200": "Käytä hahmoja Wired-valitsijasta",
@@ -521,7 +571,7 @@
     "teleport": {
       "options": {
         "0": "Nopea teleporttaus",
-        "title": "Teleporttivaihtoehdot:"
+        "title": "Teleporttauksen asetukset:"
       }
     },
     "texts": {
@@ -585,6 +635,33 @@
       },
       "weekday_selection": "Viikonpäivä:",
       "year_selection": "Vuosi:"
+    },
+    "time_util": {
+      "advanced_info": "Alla listatut alimuuttujat laskevat vuodesta 1970 ylöspäin. Voit käyttää niitä vertaillaksesi kahden eri aikaleiman välisiä arvoja.",
+      "mode": {
+        "0": "Arvo",
+        "1": "Luontiaika",
+        "2": "Viimeisin päivitysaika"
+      },
+      "subvariable": {
+        "1": "Millisekunnit",
+        "2": "Sekunnit",
+        "3": "Minuutit",
+        "4": "Tunnit",
+        "5": "Viikonpäivä",
+        "6": "Kuukauden päivä",
+        "7": "Vuoden päivä",
+        "8": "Viikkonumero",
+        "9": "Kuukausi",
+        "10": "Vuosi",
+        "20": "Millisekunnit",
+        "21": "Sekunnit",
+        "22": "Minuutit",
+        "23": "Tunnit",
+        "24": "Päivä",
+        "25": "Viikko",
+        "26": "Kuukausi"
+      }
     },
     "toggletype": {
       "0": "Vaihda seuraavaan tilaan",
@@ -669,7 +746,7 @@
         "40": "Aseta minimi",
         "41": "Aseta maksimi",
         "50": "Satunnainen ylärajalla",
-        "60": "Absoluuttinen arvo",
+        "60": "Itseisarvo",
         "100": "Bittioperaatio AND",
         "101": "Bittioperaatio OR",
         "102": "Bittioperaatio XOR",
@@ -787,6 +864,20 @@
     "group": "Valitse ryhmä",
     "handitem": "Valitse käsitavara",
     "sign": "Valitse kyltti"
+  },
+  "variable_picker": {
+    "empty": "Ei tuloksia",
+    "search": "Hae muuttujaa",
+    "tab": {
+      "all": "Kaikki muuttujat",
+      "dynamic": "Dynaamiset muuttujat",
+      "internal": "Sisäiset muuttujat",
+      "recent": "Viimeaikaiset muuttujat",
+      "search": "Haku",
+      "user_created": "Käyttäjän luomat muuttujat"
+    },
+    "tooltip_disabled": "Ei voi valita tässä yhteydessä",
+    "tooltip_not_selectable": "Ei voi valita, mutta joitain sisäkkäismuuttujia voi"
   },
   "variables": {
     "availability_change": {
