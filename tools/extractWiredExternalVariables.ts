@@ -49,9 +49,10 @@ async function convertTxtResultToJson(
 
         if (value.includes('${')) {
           const referencedKey = value.replace('${', '').replace('}', '');
-          const matchValue = data.match(new RegExp(`^${referencedKey}=([^\n]+)$`, "m"));
-          if (matchValue) {
-            const parts = matchValue[0].split("=");
+          const matchValues = [...data.matchAll(new RegExp(`^${referencedKey}=([^\n]+)$`, "gm"))];
+          if (matchValues.length > 0) {
+            const lastMatch = matchValues[matchValues.length - 1][0];
+            const parts = lastMatch.split("=");
             if (parts[0] && parts[1]) {
               current[key] = parts[1].trim();
               return current;
