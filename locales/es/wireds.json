@@ -37,7 +37,7 @@
       "description": "Permite mover y rotar los furnis seleccionados, ajustando su posición y orientación en la sala según se desee."
     },
     "time_more_than": {
-      "name": "Condición WIRED: más de x segundos transcurridos desde que reseteaste",
+      "name": "Condición WIRED: Más de x segundos transcurridos desde que reseteaste",
       "description": "El efecto se activa solo si han pasado más de x segundos desde el último reinicio del temporizador."
     },
     "state_changed": {
@@ -77,7 +77,7 @@
       "description": "Muestra un mensaje personalizado al usuario desencadenante o a los usuarios seleccionados mediante un selector."
     },
     "time_less_than": {
-      "name": "Condición WIRED: menos de x segundos transcurridos desde que reseteaste",
+      "name": "Condición WIRED: Menos de x segundos transcurridos desde que reseteaste",
       "description": "El efecto se activa solo si han pasado menos de x segundos desde el último reinicio del temporizador."
     },
     "enter_room": {
@@ -189,7 +189,7 @@
       "description": "La condición se cumple si el usuario desencadenante no está sobre ninguno de los furnis seleccionados."
     },
     "not_in_team": {
-      "name": "Condición Negativa WIRED: el usuario no es Miembro del Equipo",
+      "name": "Condición Negativa WIRED: El usuario no es Miembro del Equipo",
       "description": "La condición se cumple si el usuario desencadenante no es miembro del equipo especificado."
     },
     "not_furni_on": {
@@ -197,7 +197,7 @@
       "description": "La condición se cumple si ninguno de los furnis seleccionados tiene otro furni encima."
     },
     "not_hv_avtrs": {
-      "name": "WIRED Condición Negativa: los Furnis NO tienen avatares",
+      "name": "WIRED Condición Negativa: Los Furnis NO tienen avatares",
       "description": "La condición se cumple si ninguno de los furnis seleccionados tiene avatares encima."
     },
     "at_time_long": {
@@ -205,7 +205,7 @@
       "description": "Activa efectos después de un intervalo de tiempo más prolongado, basado en un tiempo predefinido."
     },
     "not_user_count": {
-      "name": "Condición WIRED: el recuento de usuarios no es",
+      "name": "Condición WIRED: El recuento de usuarios no es",
       "description": "La condición se cumple si el número de usuarios en la sala no está dentro de los límites definidos."
     },
     "not_wearing_fx": {
@@ -241,7 +241,7 @@
       "description": "Cambia el estado de un furni a uno aleatorio entre sus posibles estados."
     },
     "not_match_snap": {
-      "name": "WIRED Condición Negativa: el estado de los Furnis NO coincide",
+      "name": "WIRED Condición Negativa: El estado de los Furnis NO coincide",
       "description": "La condición se cumple si los estados de los furnis seleccionados no coinciden con una configuración previa."
     },
     "mute_triggerer": {
@@ -425,7 +425,7 @@
       "description": "Verifica si la cantidad de elementos seleccionados cumple una condición específica."
     },
     "valid_moves": {
-      "name": "Condición WIRED: puede realizar movimientos",
+      "name": "Condición WIRED: Puede realizar movimientos",
       "description": "La condición se cumple si el movimiento previsto del furni es válido y sin obstrucciones."
     },
     "users_handitem": {
