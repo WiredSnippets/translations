@@ -569,7 +569,7 @@
       "description": "UNKNOWN"
     },
     "text_output_variable": {
-      "name": "wf_xtra_text_output_variable name",
+      "name": "WIRED Texto Extra: Campo Variável",
       "description": "UNKNOWN"
     },
     "furni": {
@@ -593,11 +593,11 @@
       "description": "UNKNOWN"
     },
     "text_output_username": {
-      "name": "wf_xtra_text_output_username name",
+      "name": "WIRED Texto Extra: Campo Nome de Usuário",
       "description": "UNKNOWN"
     },
     "remote": {
-      "name": "wf_slc_remote name",
+      "name": "SELETOR Wired: Seleção Remota",
       "description": "UNKNOWN"
     },
     "neg_has_var": {
@@ -605,7 +605,7 @@
       "description": "UNKNOWN"
     },
     "text_input_variable": {
-      "name": "wf_xtra_text_input_variable name",
+      "name": "WIRED Texto Extra: Captura Variável",
       "description": "UNKNOWN"
     },
     "users_with_var": {
@@ -621,7 +621,7 @@
       "description": "UNKNOWN"
     },
     "exec_in_order": {
-      "name": "wf_xtra_exec_in_order name",
+      "name": "WIRED Extra: Executa na Ordem",
       "description": "UNKNOWN"
     },
     "room": {
@@ -631,6 +631,10 @@
     "teleport_to_room": {
       "name": "EFEITO WIRED: Teletransportar para Quarto",
       "description": "Teletransporta o usuário desencadeante para outro quarto."
+    },
+    "click_user": {
+      "name": "ATIVADOR WIRED: Usuário clica em Usuário",
+      "description": "É ativado quando um usuário clica em outro usuário."
     }
   }
 }

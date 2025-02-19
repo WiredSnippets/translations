@@ -627,6 +627,10 @@
     "teleport_to_room": {
       "name": "WIRED Effect: Teleport to Room",
       "description": "Teleports the triggering user to another room."
+    },
+    "click_user": {
+      "name": "WIRED Trigger: User Clicks User",
+      "description": "Triggers effects when a user clicks on another user."
     }
   }
 }

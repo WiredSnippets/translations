@@ -627,6 +627,10 @@
     "teleport_to_room": {
       "name": "Efecto WIRED: Teletransportar a Sala",
       "description": "Teletransporta al usuario desencadenante a otra sala."
+    },
+    "click_user": {
+      "name": "Causante WIRED: Habbo clica a Habbo",
+      "description": "Se activa cuando un usuario hace clic en otro usuario."
     }
   }
 }

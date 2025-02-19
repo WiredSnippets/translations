@@ -569,7 +569,7 @@
       "description": "UNKNOWN"
     },
     "text_output_variable": {
-      "name": "wf_xtra_text_output_variable name",
+      "name": "Wired Texte Add-on : Espace réservé Variable",
       "description": "UNKNOWN"
     },
     "furni": {
@@ -593,11 +593,11 @@
       "description": "UNKNOWN"
     },
     "text_output_username": {
-      "name": "wf_xtra_text_output_username name",
+      "name": "Wired Texte Add-on : Espace réservé Nom d'utilisateur",
       "description": "UNKNOWN"
     },
     "remote": {
-      "name": "wf_slc_remote name",
+      "name": "Wired Sélecteur : Sélection à distance",
       "description": "UNKNOWN"
     },
     "neg_has_var": {
@@ -605,7 +605,7 @@
       "description": "UNKNOWN"
     },
     "text_input_variable": {
-      "name": "wf_xtra_text_input_variable name",
+      "name": "Wired Texte Add-on : Capteur de variables",
       "description": "UNKNOWN"
     },
     "users_with_var": {
@@ -621,7 +621,7 @@
       "description": "UNKNOWN"
     },
     "exec_in_order": {
-      "name": "wf_xtra_exec_in_order name",
+      "name": "Wired Texte Add-on : Exécuter dans l'ordre",
       "description": "UNKNOWN"
     },
     "room": {
@@ -631,6 +631,10 @@
     "teleport_to_room": {
       "name": "Effet WIRED : Teleporter vers une autre salle",
       "description": "Teleporte l'utilisateur déclencheur vers une autre salle."
+    },
+    "click_user": {
+      "name": "WIRED Déclencheur : L'utilisateur clique l'utilisateur",
+      "description": "Déclenche des effets lorsqu'un utilisateur clique sur un autre utilisateur."
     }
   }
 }
